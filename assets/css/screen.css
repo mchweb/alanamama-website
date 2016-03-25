@@ -1115,6 +1115,95 @@ img.mfp-img {
   opacity: 0;
 }
 
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider-wrap {
+  position: relative;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider-wrap.unslider-carousel > li {
+  float: left;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider-vertical > ul {
+  height: 100%;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider-vertical li {
+  float: none;
+  width: 100%;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider-fade {
+  position: relative;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10;
+}
+
+/* line 1, ../../sass/lib/_unslider.scss */
+.unslider li, .unslider ol, .unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* line 2, ../../sass/lib/_unslider.scss */
+.unslider-arrow {
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+  background: black;
+  text-align: center;
+  color: white;
+  line-height: 2.5em;
+  margin-top: -7px;
+  z-index: 101;
+  width: 3em;
+  height: 3em;
+  opacity: 0.5;
+  margin-top: -4em;
+}
+
+/* line 17, ../../sass/lib/_unslider.scss */
+.unslider-arrow:hover {
+  opacity: 0.75;
+}
+
+/* line 20, ../../sass/lib/_unslider.scss */
+.unslider-arrow span {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* line 24, ../../sass/lib/_unslider.scss */
+.unslider-arrow.next {
+  left: auto;
+  right: 0px;
+}
+
 /* line 2, ../../sass/_common.scss */
 html, body {
   height: 100%;
@@ -1244,6 +1333,12 @@ body.modal_open {
   overflow: hidden;
 }
 
+/* line 34, ../../sass/_main.scss */
+.slider-img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* line 5, ../../sass/_decoration.scss */
 .clr-white {
   color: white !important;
@@ -1260,7 +1355,8 @@ body.modal_open {
 }
 
 /* line 5, ../../sass/_anim.scss */
-#updown-container {
+#updown-container,
+.unslider-arrow {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
