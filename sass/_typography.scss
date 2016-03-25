@@ -1,0 +1,17 @@
+// MAIN TYPOGRAPHY
+@import "compass/typography/vertical_rhythm";
+$base-font-size: 16px;
+$base-line-height: 6px;
+
+
+// Base styles
+// =================
+@include establish-baseline;
+
+html {
+	@include adjust-leading-to(4);
+}
+body{
+	font-family:source-sans-pro,Arial,sans-serif;
+	color:$text-clr;
+}
