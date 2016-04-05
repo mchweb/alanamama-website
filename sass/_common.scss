@@ -7,6 +7,12 @@ html, body {
 a {
 	text-decoration: none;
 	cursor:pointer;
+	color:$text-clr;
+}
+
+a.anchor{
+	position: absolute;
+	margin-top:-10em;
 }
 
 /* Up-down button */
@@ -51,9 +57,4 @@ a {
 	#updown-container {
 		display:none;
 	}
-}
-
-a.anchor{
-	position: absolute;
-	margin-top:-160px;
 }

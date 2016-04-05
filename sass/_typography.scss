@@ -3,6 +3,8 @@
 $base-font-size: 16px;
 $base-line-height: 6px;
 
+$base-d:$base-line-height/$base-font-size;
+
 
 // Base styles
 // =================
@@ -12,6 +14,6 @@ html {
 	@include adjust-leading-to(4);
 }
 body{
-	font-family:source-sans-pro,Arial,sans-serif;
+	font-family:source-sans-pro,tahoma,sans-serif;
 	color:$text-clr;
 }
