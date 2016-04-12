@@ -22,15 +22,19 @@
 	<body>
 
 
-		<!--[if lt IE 9]>
-			<p style="text-align:center;font-size:20px;background:white;width:100%;z-index:10000;padding:20px 0px"><strong>Кажется, ваш браузер безнадежно устарел.</strong> Скорее всего, сайт будет отображаться и работать некорректно.<br/>Пожалуйста, <a href="http://browsehappy.com/" target="_blank">установите с одного из официальных сайтов</a> новую версию своего браузера.<br/></p>
+		<!--[if lt IE 10]>
+			<p style="text-align:center;font-size:20px;background:white;width:100%;z-index:10000;padding:20px 0px"><strong>Кажется, ваш браузер безнадежно устарел.</strong> Скорее всего, сайт будет отображаться и работать некорректно.<br/>Пожалуйста, <a style="color:red" href="http://browsehappy.com/" target="_blank">установите с одного из официальных сайтов</a> новую версию своего браузера.<br/></p>
 		<![endif]-->
 
 		<div class="b-sticky">
 			<!-- BEGIN of b-header -->
 			<header class="b-header">
 				<div class="wrap">
-					<a href="#"><img class="b-header__logo" src="assets/img/header-logo.png" alt=""></a>
+					<div class="mobile-nav__trigger"><img src="assets/img/header-menu.png" alt=""></div>
+					<a href="#">
+						<img class="b-header__logo" src="assets/img/header-logo.png" alt="">
+					</a>
+					
 					<div class="b-header__caption">
 						<h1>Доставка пирогов в Томске.<br>Много. Сочно. Горячо.</h1>
 					</div>
@@ -42,34 +46,74 @@
 					</div>
 					<div class="b-header-cart">
 						<div class="b-header-cart__sum"><span>741&#160;&#8381;</span></div>
+
 						<a href="#">
 							<div class="b-header-cart-button">
 								<img class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="">
 								<div class="b-header-cart-button__caption"><span>Корзина</span></div>
+								<div class="b-header-cart-button__counter"><p>4</p></div>
 							</div>
 						</a>
+
+						<!-- BEGIN of b-cart -->
+						<div class="b-cart">
+							<div class="b-cart__title"><span>В вашей корзине:</span></div>
+							<div class="b-cart-list">
+								<div class="b-cart-item">
+									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами</span></div>
+									<button class="b-cart-item__remove"></button>
+									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
+									<div class="b-cart-item-counter">shto</div>
+								</div>
+								<div class="b-cart-item">
+									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами</span></div>
+									<button class="b-cart-item__remove"></button>
+									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
+									<div class="b-cart-item-counter">shto</div>
+								</div>
+								<div class="b-cart-item">
+									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами</span></div>
+									<button class="b-cart-item__remove"></button>
+									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
+									<div class="b-cart-item-counter">shto</div>
+								</div>
+							</div>
+							<div class="b-cart-total">
+								<div class="b-cart-total__sum"><p>Сумма заказа: <span>741&#160;&#8381;</span></p></div>
+								<div class="b-cart-total__button"><button class="b-button"><span>Перейти к оформлению</span></button></div>
+							</div>
+						</div>
+						<!-- END of b-cart -->
+
+					</div>
+					<div class="b-header__logo_inline">
+						<a href="#"><img src="assets/img/header-logo-inline.png" alt=""></a>
 					</div>
 				</div>
 			</header>
 			<!-- END of b-header -->
 			<!-- BEGIN of b-nav -->
 			<div class="b-nav">
-				<div class="wrap">
+				<div class="wrap nav">
+					<div class="phone-nav nav-item">
+						<span><a href="#">Позвонить: 209-209</a></span>
+					</div>
 					<nav class="catalog-nav">
 						<ul class="catalog-nav-list">
-							<a href="#"><li class="catalog-nav-list__item catalog-nav-list__item_first"><span>Пироги</span></li></a>
-							<a href="#"><li class="catalog-nav-list__item"><span>Пицца</span></li></a>
-							<a href="#"><li class="catalog-nav-list__item"><span>Закуски</span></li></a>
-							<a href="#"><li class="catalog-nav-list__item"><span>Напитки</span></li></a>
-							<a href="#"><li class="catalog-nav-list__item catalog-nav-list__item_extra"><span>Пицца и суши от Ням-Ням</span></li></a>
+							<a href="#"><li class="catalog-nav-list__item nav-item catalog-nav-list__item_first"><span>Пироги</span></li></a>
+							<a href="#"><li class="catalog-nav-list__item nav-item"><span>Пицца</span></li></a>
+							<a href="#"><li class="catalog-nav-list__item nav-item"><span>Закуски</span></li></a>
+							<a href="#"><li class="catalog-nav-list__item nav-item"><span>Напитки</span></li></a>
+							<a href="#"><li class="catalog-nav-list__item nav-item catalog-nav-list__item_extra"><span>Пицца и суши от Ням-Ням</span></li></a>
 						</ul>
 					</nav>
 					<nav class="main-nav">
+						<div class="main-nav__trigger"><span>Информация</span></div>
 						<ul class="main-nav-list">
-							<li class="main-nav-list__item"><a href="#">Акции</a></li>
-							<li class="main-nav-list__item"><a href="#">Отзывы</a></li>
-							<li class="main-nav-list__item"><a href="#">Условия доставки</a></li>
-							<li class="main-nav-list__item main-nav-list__item_last"><a href="#">Вакансии</a></li>
+							<a href="#"><li class="main-nav-list__item nav-item"><span>Акции</span></li></a>
+							<a href="#"><li class="main-nav-list__item nav-item"><span>Отзывы</span></li></a>
+							<a href="#"><li class="main-nav-list__item nav-item"><span>Условия доставки</span></li></a>
+							<a href="#"><li class="main-nav-list__item nav-item main-nav-list__item_last"><span>Вакансии</span></li></a>
 						</ul>
 					</nav>
 				</div>
@@ -77,9 +121,10 @@
 			<!-- END of b-nav -->
 		</div>
 
+
+
 		<!-- BEGIN of b-content -->
 		<div class="b-content">
-
 			<!-- BEGIN of b-slider -->
 			<div class="b-slider">
 				<div class="my-slider">
@@ -101,6 +146,7 @@
 				</div>
 
 				<div class="b-product-list">
+
 					<div class="b-product">
 						<a href="#">
 							<div class="b-product-pic">
@@ -117,6 +163,7 @@
 							<div class="b-product-price__button"><button class="b-button"><span>В корзину</span></button></div>
 						</div>
 					</div>
+
 					<div class="b-product">
 						<a href="#">
 							<div class="b-product-pic">
@@ -131,9 +178,22 @@
 						<div class="b-product__caption"><span>30 см.&nbsp;&nbsp;|&nbsp;&nbsp;900 гр.&nbsp;&nbsp;|&nbsp;&nbsp;545&#160;&#8381;</span></div>
 						<div class="b-product-price">
 							<div class="b-product-price__text"><span>360&#160;&#8381;</span></div>
-							<div class="b-product-price__button"><button class="b-button"><span>В корзину</span></button></div>
+							<!--<div class="b-product-price__button"><button class="b-button"><span>В корзину</span></button></div>-->
+							<div class="b-count-switch">
+								<div class="b-count-switch__button">
+									<button class="b-button b-button_nohover"><span>–</span></button>
+								</div>
+								<div class="b-count-switch__input">
+									<input type="text" maxlength="3" disabled value="1">
+								</div>
+								<div class="b-count-switch__button">
+									<button class="b-button b-button_nohover"><span>+</span></button>
+								</div>
+							</div>
 						</div>
 					</div>
+
+
 					<div class="b-product">
 						<a href="#">
 							<div class="b-product-pic">
@@ -206,6 +266,23 @@
 				</div>
 			</div>
 			<!-- END of b-cat -->
+
+			<!-- BEGIN of b-pre-footer -->
+			<div class="b-pre-footer wrap">
+				<div class="b-delivery">
+					<div class="b-delivery-text">
+						<ul class="b-delivery-list">
+							<li class="b-delivery-list__item"><span>—&nbsp;Доставка ежедневно с 10:30 до 21:00, 60–90 мин.</span></li>
+							<li class="b-delivery-list__item"><span>—&nbsp;Минимальная сумма заказа: 400&#160;&#8381;</span></li>
+							<li class="b-delivery-list__item"><span>—&nbsp;Оплата наличными или банковской картой</span></li>
+							<li class="b-delivery-list__item"><span>—&nbsp;Скидки и <a href="#">акции</a> не суммируются</span></li>
+							<li class="b-delivery-list__item"><span>—&nbsp;Доставка по городу бесплатно (<a href="#">подробные условия</a>)</span></li>
+						</ul>
+					</div>
+					<button class="b-button"><span>Перейти к оформлению</span></button>
+				</div>
+			</div>
+			<!-- END of b-pre-footer -->
 			
 		</div>
 		<!-- END of b-content -->
@@ -230,6 +307,11 @@
 		</footer>
 		<!-- END of b-footer -->
 
+		<!-- BEGIN of b-call -->
+		<div class="b-call">
+			<a href="tel:+73822209209"><img class="b-call__icon" src="assets/img/footer-phone.png"></a>
+		</div>
+		<!-- END of b-call -->
 		
 
 

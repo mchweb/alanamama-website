@@ -55,7 +55,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 10683,
+				"buffer_size": 10918,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,15 +63,15 @@
 			"file": "sass/_main.scss",
 			"settings":
 			{
-				"buffer_size": 7080,
+				"buffer_size": 7429,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "sass/_grids.scss",
+			"file": "sass/_anim.scss",
 			"settings":
 			{
-				"buffer_size": 277,
+				"buffer_size": 968,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,39 +79,15 @@
 			"file": "sass/_common.scss",
 			"settings":
 			{
-				"buffer_size": 858,
+				"buffer_size": 182,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "sass/_layout.scss",
+			"file": "assets/js/main.js",
 			"settings":
 			{
-				"buffer_size": 282,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 233,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/_typography.scss",
-			"settings":
-			{
-				"buffer_size": 338,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/_var.scss",
-			"settings":
-			{
-				"buffer_size": 258,
+				"buffer_size": 19973,
 				"line_ending": "Unix"
 			}
 		}
@@ -236,24 +212,25 @@
 	},
 	"file_history":
 	[
-		"/C/Users/writt/Desktop/alana/sass/_var.scss",
-		"/C/Users/writt/Desktop/alana/index.html",
-		"/C/Users/writt/Desktop/alana/sass/_layout.scss",
+		"/C/Users/writt/Desktop/alana/sass/_main.scss",
+		"/C/Users/writt/Desktop/alana/sass/_grids.scss",
 		"/C/Users/writt/Desktop/alana/sass/_common.scss",
+		"/C/Users/writt/Desktop/alana/sass/_layout.scss",
 		"/C/Users/writt/Desktop/alana/sass/screen.scss",
+		"/C/Users/writt/Desktop/alana/sass/_typography.scss",
+		"/C/Users/writt/Desktop/alana/assets/css/screen.css",
+		"/C/Users/writt/Desktop/alana/sass/_var.scss",
+		"/C/Users/writt/Desktop/alana/package.json",
+		"/C/Users/writt/Desktop/alana/Gruntfile.js",
+		"/C/Users/writt/Desktop/alana/index.html",
 		"/C/Users/writt/Desktop/alana/assets/js/main.js",
 		"/C/Users/writt/Desktop/alana/sass/lib/_unslider.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_normalize.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_reset.scss",
 		"/C/Users/writt/Desktop/alana/sass/_anim.scss",
-		"/C/Users/writt/Desktop/alana/sass/_main.scss",
 		"/C/Users/writt/Desktop/alana/sass/_decoration.scss",
 		"/C/Users/writt/Desktop/alana/sass/_pages.scss",
-		"/C/Users/writt/Desktop/alana/sass/_typography.scss",
 		"/C/Users/writt/Desktop/alana/sass/mc.scss",
-		"/C/Users/writt/Desktop/alana/sass/_grids.scss",
-		"/C/Users/writt/Desktop/alana/package.json",
-		"/C/Users/writt/Desktop/alana/Gruntfile.js",
 		"/C/Users/writt/Desktop/alana/config.rb",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/dept2.html",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/faf.html",
@@ -363,6 +340,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"70em",
+			"catalog-nav-list__item",
+			".b-header__caption",
 			"ph.png",
 			"ph.png\n",
 			">\n",
@@ -438,15 +418,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 10683,
+						"buffer_size": 10918,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8628,
-								8628
+								10329,
+								10329
 							]
 						],
 						"settings":
@@ -455,7 +435,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4049.0,
+						"translation.y": 4215.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -465,48 +445,49 @@
 					"file": "sass/_main.scss",
 					"settings":
 					{
-						"buffer_size": 7080,
+						"buffer_size": 7429,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6407,
-								6407
+								5665,
+								5665
 							]
 						],
 						"settings":
 						{
 							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6688.0,
+						"translation.y": 5705.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "sass/_grids.scss",
+					"file": "sass/_anim.scss",
 					"settings":
 					{
-						"buffer_size": 277,
+						"buffer_size": 968,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								189,
-								189
+								46,
+								46
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -520,20 +501,19 @@
 					"file": "sass/_common.scss",
 					"settings":
 					{
-						"buffer_size": 858,
+						"buffer_size": 182,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								127,
-								127
+								182,
+								182
 							]
 						],
 						"settings":
 						{
-							"auto_indent": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -545,106 +525,26 @@
 				},
 				{
 					"buffer": 4,
-					"file": "sass/_layout.scss",
+					"file": "assets/js/main.js",
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 19973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								231,
-								231
+								19799,
+								19799
 							]
 						],
 						"settings":
 						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "sass/screen.scss",
-					"settings":
-					{
-						"buffer_size": 233,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								122,
-								122
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "sass/_typography.scss",
-					"settings":
-					{
-						"buffer_size": 338,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								306,
-								306
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "sass/_var.scss",
-					"settings":
-					{
-						"buffer_size": 258,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								105,
-								99
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 500.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

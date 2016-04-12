@@ -15,62 +15,6 @@ $(document).ready(function($) {
     });
     });
 
-/* Updown */
-
-  $(function () { 
-$(document).ready(updownResize);
-$(window).resize(updownResize);
-});
-  function updownResize(){
-  $( "#updown" ).width(($( window ).width() - 1576)/2);
-  }
-    var updownElem = document.getElementById('updown');
-
-    var pageYLabel = 0;
-
-    updownElem.onclick = function() {
-      var pageY = window.pageYOffset || document.documentElement.scrollTop;
-	  	  
-      switch (this.className) {
-        case 'up':
-          pageYLabel = pageY;
-          window.scrollTo(0, 0);
-          this.className = 'down';
-          break;
-
-        case 'down':
-          window.scrollTo(0, pageYLabel);
-          this.className = 'up';
-      }
-
-    }
-
-    window.onscroll = function() {
-      var pageY = window.pageYOffset || document.documentElement.scrollTop;
-      var innerHeight = document.documentElement.clientHeight;
-	  
-      switch (updownElem.className) {
-        case '':
-          if (pageY < innerHeight) {
-            updownElem.className = 'up';
-          }
-          break;
-
-        case 'up':
-          if (pageY == 0) {
-            updownElem.className = '';
-          }
-          break;
-
-        case 'down':
-            if (pageY != 0){ updownElem.className = 'up';
-			pageYLabel = 0;
-			}
-          break;
-
-      }
-    }
-
 /* mfp */
 $(document).ready(function() {
   $('.mfp-link').magnificPopup({
@@ -114,3 +58,30 @@ $( document ).ajaxStart(function() {
 $( document ).ajaxStop(function() {
 
 });
+
+$(".main-nav__trigger").hover(function(){
+	$(".main-nav-list").addClass("main-nav-list_show");
+});
+$(".main-nav").mouseleave(function(){
+	$(".main-nav-list").removeClass("main-nav-list_show");
+});
+$(".mobile-nav__trigger").click(function(){
+	var x = $(".b-nav");
+	if (x.hasClass("b-nav_show")){
+		closeMenuMobile();
+	}else{
+		$(".b-nav").slideDown("fast");
+		$(".b-nav").addClass("b-nav_show");
+	}
+	
+});
+
+function closeMenuMobile(){
+	$(".b-nav").slideUp("fast");
+	$(".b-nav").removeClass("b-nav_show");
+}
+
+$(".nav-item").each(function(){
+	$(this).on("click", closeMenuMobile);
+}
+);

@@ -2,7 +2,6 @@
 // Basic
 // ==================
 
-#updown-container,
 .unslider-arrow
 {
 	-webkit-transition: all 0.2s ease-in-out;
@@ -12,3 +11,26 @@
 	transition: all 0.2s ease-in-out;
 }
 
+
+@-moz-keyframes spin {
+    0% { -moz-transform: rotate(0deg); }
+    10% { -moz-transform: rotate(60deg); }
+    20% { -moz-transform: rotate(-20deg); }
+    30% { -moz-transform: rotate(-0deg); }
+    100% { -moz-transform: rotate(0deg); }
+
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    10% { -webkit-transform: rotate(60deg); }
+    20% { -webkit-transform: rotate(-20deg); }
+    30% { -webkit-transform: rotate(-0deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(60deg); }
+    20% { transform: rotate(-20deg); }
+    30% { transform: rotate(-0deg); }
+    100% { transform: rotate(0deg); }
+}
