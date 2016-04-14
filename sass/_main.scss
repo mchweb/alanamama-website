@@ -866,6 +866,9 @@ a:hover{
 }
 .p-menu{
 	max-width:$base-d*140em;
+	@media (max-width: 660px) {
+		max-width:$base-d*80em;
+    }
 }
 .p-product__image {
 	width:50%;
@@ -956,7 +959,7 @@ a:hover{
 }
 
 .b-promo{
-	display:none;
+	//display:none;
 	@include rhythm(0, 2, 2, 0);
 	padding-left:$base-d*1.5em;
 	padding-right:$base-d*1.5em;
@@ -969,6 +972,10 @@ a:hover{
 	vertical-align:top;
 	padding-left:$base-d*1.5em;
 	padding-right:$base-d*1.5em;
+	@media (max-width: 660px) {
+		width:100%;
+    }
+	
 }
 .b-promo-item__image{
 	width:100%;
@@ -979,7 +986,7 @@ a:hover{
 	font-weight:600;
 }
 .b-feedback{
-	display:none;
+	//display:none;
 	@include rhythm(0, 2, 2, 0);
 	padding-left:$base-d*1.5em;
 	padding-right:$base-d*1.5em;
@@ -1000,6 +1007,11 @@ a:hover{
 	padding-right:$base-d*1.5em;
 	background-size:cover;
 	border-radius:100%;
+	@media (max-width: 660px) {
+		width:$base-d*10em;
+		height:$base-d*10em;
+		padding-top:$base-d*4em;
+    }
 }
 .b-feedback-item-image div p{
 	@include adjust-font-size-to(40px);
@@ -1012,6 +1024,9 @@ a:hover{
 	padding-left:$base-d*3em;
 	padding-right:$base-d*1.5em;
 	@include rhythm(0, 1, 0, 0);
+	@media (max-width: 660px) {
+		padding-left:$base-d*1.5em;
+    }
 }
 .b-feedback-item-data__author span{
 	@include adjust-font-size-to(18px);
@@ -1022,6 +1037,12 @@ a:hover{
 }
 .b-feedback-item-data__date span{
 	@include adjust-font-size-to(14px);
+}
+.b-feedback-item-data__text{
+	@media (max-width: 660px) {
+		margin-left:-$base-d*11.5em;
+		padding-top:$base-d*2em;
+    }
 }
 .b-feedback-more{
 	text-align:center;
@@ -1050,5 +1071,39 @@ a:hover{
 .b-vacancy__separator{
 	width:100%;
 	border-bottom:1px solid $light-clr;
-	margin-bottom:$base-d*1em;
+	margin-bottom:$base-d*2em;
+}
+
+.b-deliv__title p{
+	@include adjust-font-size-to(20px);
+	font-weight:700;
+}
+.b-deliv__note{
+	@include rhythm(0, 2, 2, 0);
+	font-weight:600;
+}
+.b-deliv__text, .b-deliv__note, .b-deliv__title{
+	padding-left:$base-d*3em;
+	padding-right:$base-d*3em;
+}
+.b-deliv table{
+	@include rhythm(2, 0, 0, 4);
+}
+.b-deliv table th{
+	font-weight:600;
+	background:$back-clr;
+	color:black;
+}
+.b-deliv table th span{
+	@include adjust-font-size-to(18px);
+}
+.b-deliv table td{
+	border-top:1px solid $dark-clr;
+}
+.b-deliv table td, 
+.b-deliv table th {
+	
+	@include rhythm(0, 1.5, 1.5, 0);
+	padding-left:$base-d*3em;
+	padding-right:$base-d*3em;
 }

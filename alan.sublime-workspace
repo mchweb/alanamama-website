@@ -55,7 +55,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 25416,
+				"buffer_size": 28854,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "sass/_main.scss",
 			"settings":
 			{
-				"buffer_size": 20219,
+				"buffer_size": 21254,
 				"line_ending": "Unix"
 			}
 		},
@@ -455,7 +455,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -463,15 +463,19 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 25416,
+						"buffer_size": 28854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13454,
-								13454
+								16092,
+								16092
+							],
+							[
+								16137,
+								16137
 							]
 						],
 						"settings":
@@ -480,7 +484,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5415.0,
+						"translation.y": 5975.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -490,15 +494,15 @@
 					"file": "sass/_main.scss",
 					"settings":
 					{
-						"buffer_size": 20219,
+						"buffer_size": 21254,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19880,
-								19880
+								21098,
+								21098
 							]
 						],
 						"settings":
@@ -508,7 +512,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 20171.0,
+						"translation.y": 21235.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -611,7 +615,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
