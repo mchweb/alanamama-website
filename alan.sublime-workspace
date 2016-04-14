@@ -55,7 +55,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 10918,
+				"buffer_size": 25416,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,23 +63,15 @@
 			"file": "sass/_main.scss",
 			"settings":
 			{
-				"buffer_size": 7429,
+				"buffer_size": 20219,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "sass/_anim.scss",
+			"file": "sass/_var.scss",
 			"settings":
 			{
-				"buffer_size": 968,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/_common.scss",
-			"settings":
-			{
-				"buffer_size": 182,
+				"buffer_size": 258,
 				"line_ending": "Unix"
 			}
 		},
@@ -87,8 +79,48 @@
 			"file": "assets/js/main.js",
 			"settings":
 			{
-				"buffer_size": 19973,
+				"buffer_size": 22629,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/lib/_unslider.scss",
+			"settings":
+			{
+				"buffer_size": 852,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 371,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/lib/_mfp.scss",
+			"settings":
+			{
+				"buffer_size": 9089,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "p-product.html",
+			"settings":
+			{
+				"buffer_size": 1777,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -212,22 +244,24 @@
 	},
 	"file_history":
 	[
-		"/C/Users/writt/Desktop/alana/sass/_main.scss",
-		"/C/Users/writt/Desktop/alana/sass/_grids.scss",
 		"/C/Users/writt/Desktop/alana/sass/_common.scss",
+		"/C/Users/writt/Desktop/alana/sass/lib/hamburgers/hamburgers.scss",
+		"/C/Users/writt/Desktop/alana/assets/css/screen.css",
+		"/C/Users/writt/Desktop/alana/sass/lib/_hamburger.scss",
+		"/C/Users/writt/Desktop/alana/assets/js/main.js",
+		"/C/Users/writt/Desktop/alana/sass/_main.scss",
+		"/C/Users/writt/Desktop/alana/sass/_anim.scss",
+		"/C/Users/writt/Desktop/alana/sass/_grids.scss",
 		"/C/Users/writt/Desktop/alana/sass/_layout.scss",
 		"/C/Users/writt/Desktop/alana/sass/screen.scss",
 		"/C/Users/writt/Desktop/alana/sass/_typography.scss",
-		"/C/Users/writt/Desktop/alana/assets/css/screen.css",
 		"/C/Users/writt/Desktop/alana/sass/_var.scss",
 		"/C/Users/writt/Desktop/alana/package.json",
 		"/C/Users/writt/Desktop/alana/Gruntfile.js",
 		"/C/Users/writt/Desktop/alana/index.html",
-		"/C/Users/writt/Desktop/alana/assets/js/main.js",
 		"/C/Users/writt/Desktop/alana/sass/lib/_unslider.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_normalize.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_reset.scss",
-		"/C/Users/writt/Desktop/alana/sass/_anim.scss",
 		"/C/Users/writt/Desktop/alana/sass/_decoration.scss",
 		"/C/Users/writt/Desktop/alana/sass/_pages.scss",
 		"/C/Users/writt/Desktop/alana/sass/mc.scss",
@@ -340,6 +374,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"7em",
+			"b-cart-item-counter__button",
+			"b-cart-item-counter__button ",
+			"*",
+			".b-cart-item-remove",
+			"nav",
+			"max-he",
+			"cart",
+			"slider",
+			"js",
+			"680",
 			"70em",
 			"catalog-nav-list__item",
 			".b-header__caption",
@@ -410,7 +455,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -418,15 +463,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 10918,
+						"buffer_size": 25416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10329,
-								10329
+								13454,
+								13454
 							]
 						],
 						"settings":
@@ -435,7 +480,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4215.0,
+						"translation.y": 5415.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -445,15 +490,15 @@
 					"file": "sass/_main.scss",
 					"settings":
 					{
-						"buffer_size": 7429,
+						"buffer_size": 20219,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5665,
-								5665
+								19880,
+								19880
 							]
 						],
 						"settings":
@@ -463,32 +508,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5705.0,
+						"translation.y": 20171.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "sass/_anim.scss",
+					"file": "sass/_var.scss",
 					"settings":
 					{
-						"buffer_size": 968,
+						"buffer_size": 258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								46,
-								46
+								124,
+								118
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -498,24 +541,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "sass/_common.scss",
+					"file": "assets/js/main.js",
 					"settings":
 					{
-						"buffer_size": 182,
+						"buffer_size": 22629,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								182,
-								182
+								20015,
+								20015
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -525,26 +567,137 @@
 				},
 				{
 					"buffer": 4,
-					"file": "assets/js/main.js",
+					"file": "sass/lib/_unslider.scss",
 					"settings":
 					{
-						"buffer_size": 19973,
+						"buffer_size": 852,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19799,
-								19799
+								471,
+								471
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 500.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sass/screen.scss",
+					"settings":
+					{
+						"buffer_size": 276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "sass/lib/_mfp.scss",
+					"settings":
+					{
+						"buffer_size": 9089,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2752,
+								2742
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2557.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "p-product.html",
+					"settings":
+					{
+						"buffer_size": 1777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1374,
+								1374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

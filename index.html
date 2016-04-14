@@ -30,7 +30,13 @@
 			<!-- BEGIN of b-header -->
 			<header class="b-header">
 				<div class="wrap">
-					<div class="mobile-nav__trigger"><img src="assets/img/header-menu.png" alt=""></div>
+					<div class="mobile-nav__trigger">
+						<button class="hamburger hamburger--slider" type="button">
+						  <span class="hamburger-box">
+						    <span class="hamburger-inner"></span>
+						  </span>
+						</button>
+					</div>
 					<a href="#">
 						<img class="b-header__logo" src="assets/img/header-logo.png" alt="">
 					</a>
@@ -45,38 +51,110 @@
 						</a>
 					</div>
 					<div class="b-header-cart">
-						<div class="b-header-cart__sum"><span>741&#160;&#8381;</span></div>
+						<div class="b-header-cart__sum"><span>741</span><span>&#160;&#8381;</span></div>
 
-						<a href="#">
-							<div class="b-header-cart-button">
-								<img class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="">
-								<div class="b-header-cart-button__caption"><span>Корзина</span></div>
-								<div class="b-header-cart-button__counter"><p>4</p></div>
-							</div>
-						</a>
+						<div class="b-header-cart-button">
+							<img class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="">
+							<div class="b-header-cart-button__caption"><span>Корзина</span></div>
+							<div class="b-header-cart-button__counter"><p>4</p></div>
+						</div>
 
 						<!-- BEGIN of b-cart -->
 						<div class="b-cart">
 							<div class="b-cart__title"><span>В вашей корзине:</span></div>
 							<div class="b-cart-list">
 								<div class="b-cart-item">
-									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами</span></div>
-									<button class="b-cart-item__remove"></button>
+									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами, и с сосиками, и с мясом твоего котика</span></div>
+									<div class="b-cart-item-counter">
+										<div class="b-count-switch">
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
+											</div>
+											<div class="b-count-switch__input b-count-switch__input_sm">
+												<input type="text" maxlength="3" disabled value="1">
+											</div>
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
+											</div>
+										</div>
+									</div>
 									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
-									<div class="b-cart-item-counter">shto</div>
+									<div class="b-cart-item-remove"><button class="b-cart-item-remove__button"></button></div>
 								</div>
 								<div class="b-cart-item">
 									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами</span></div>
-									<button class="b-cart-item__remove"></button>
+									<div class="b-cart-item-counter">
+										<div class="b-count-switch">
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
+											</div>
+											<div class="b-count-switch__input b-count-switch__input_sm">
+												<input type="text" maxlength="3" disabled value="1">
+											</div>
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
+											</div>
+										</div>
+									</div>
 									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
-									<div class="b-cart-item-counter">shto</div>
+									<div class="b-cart-item-remove"><button class="b-cart-item-remove__button"></button></div>
+								</div>
+								<div class="b-cart-item">
+									<div class="b-cart-item__title"><span>Пирог с мясом твоего котика</span></div>
+									<div class="b-cart-item-counter">
+										<div class="b-count-switch">
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
+											</div>
+											<div class="b-count-switch__input b-count-switch__input_sm">
+												<input type="text" maxlength="3" disabled value="1">
+											</div>
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
+											</div>
+										</div>
+									</div>
+									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
+									<div class="b-cart-item-remove"><button class="b-cart-item-remove__button"></button></div>
+								</div>
+								<div class="b-cart-item">
+									<div class="b-cart-item__title"><span>Пирог с курицей и с сосиками</span></div>
+									<div class="b-cart-item-counter">
+										<div class="b-count-switch">
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
+											</div>
+											<div class="b-count-switch__input b-count-switch__input_sm">
+												<input type="text" maxlength="3" disabled value="1">
+											</div>
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
+											</div>
+										</div>
+									</div>
+									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
+									<div class="b-cart-item-remove"><button class="b-cart-item-remove__button"></button></div>
 								</div>
 								<div class="b-cart-item">
 									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами</span></div>
-									<button class="b-cart-item__remove"></button>
+									<div class="b-cart-item-counter">
+										<div class="b-count-switch">
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
+											</div>
+											<div class="b-count-switch__input b-count-switch__input_sm">
+												<input type="text" maxlength="3" disabled value="1">
+											</div>
+											<div class="b-cart-item-counter__button b-count-switch__button">
+												<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
+											</div>
+										</div>
+									</div>
 									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
-									<div class="b-cart-item-counter">shto</div>
+									<div class="b-cart-item-remove"><button class="b-cart-item-remove__button"></button></div>
 								</div>
+
+
 							</div>
 							<div class="b-cart-total">
 								<div class="b-cart-total__sum"><p>Сумма заказа: <span>741&#160;&#8381;</span></p></div>
@@ -96,7 +174,7 @@
 			<div class="b-nav">
 				<div class="wrap nav">
 					<div class="phone-nav nav-item">
-						<span><a href="#">Позвонить: 209-209</a></span>
+						<span><a href="tel:+73822209209">Позвонить: 209-209</a></span>
 					</div>
 					<nav class="catalog-nav">
 						<ul class="catalog-nav-list">
@@ -110,10 +188,10 @@
 					<nav class="main-nav">
 						<div class="main-nav__trigger"><span>Информация</span></div>
 						<ul class="main-nav-list">
-							<a href="#"><li class="main-nav-list__item nav-item"><span>Акции</span></li></a>
-							<a href="#"><li class="main-nav-list__item nav-item"><span>Отзывы</span></li></a>
-							<a href="#"><li class="main-nav-list__item nav-item"><span>Условия доставки</span></li></a>
-							<a href="#"><li class="main-nav-list__item nav-item main-nav-list__item_last"><span>Вакансии</span></li></a>
+							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item"><span>Акции</span></li></a>
+							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item"><span>Отзывы</span></li></a>
+							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item"><span>Условия доставки</span></li></a>
+							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item main-nav-list__item_last"><span>Вакансии</span></li></a>
 						</ul>
 					</nav>
 				</div>
@@ -121,17 +199,120 @@
 			<!-- END of b-nav -->
 		</div>
 
+		<!-- BEGIN of p-menu -->
+		<div id="p-menu" class="p-menu mfp-hide zoom-anim-dialog">
+			<nav class="p-menu-nav">
+				<ul class="menu-nav-list">
+					<a href="#"><li class="menu-nav-list__item menu-nav-list__item_current"><span>Акции</span></li></a><!--
+					--><a href="#"><li class="menu-nav-list__item"><span>Отзывы</span></li></a><!--
+					--><a href="#"><li class="menu-nav-list__item"><span>Условия доставки</span></li></a><!--
+					--><a href="#"><li class="menu-nav-list__item"><span>Вакансии</span></li></a>
+				</ul>
+			</nav>
+			<!-- BEGIN of b-promo -->
+			<div class="p-menu-item b-promo">
+				<div class="p-menu-item__title"><span>Подробные условия акций уточняйте по телефону <a href="tel:+73822209209">209-209</a></span></div>
+				<div class="b-promo-item">
+					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<p class="b-promo-item__title">Счастливые часы!</p>
+					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
+				</div><!--
+				--><div class="b-promo-item">
+					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<p class="b-promo-item__title">Счастливые часы!</p>
+					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
+				</div><!--
+				--><div class="b-promo-item">
+					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<p class="b-promo-item__title">Счастливые часы!</p>
+					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
+				</div><!--
+				--><div class="b-promo-item">
+					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<p class="b-promo-item__title">Счастливые часы!</p>
+					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
+				</div>
+			</div>
+			<!-- END of b-promo -->
+
+			<!-- BEGIN of b-feedback -->
+			<div class="p-menu-item b-feedback">
+				<div class="p-menu-item__title"><span>Оставьте свой отзыв, отправив письмо на <a href="mailto:feedback@alanamama.ru">feedback@alanamama.ru</a></span></div>
+				<div class="b-feedback-item">
+					<div class="b-feedback-item-image">
+						<div style="background-image:url(assets/img/no-photo.png)">
+							<p>«</p>
+						</div>
+					</div>
+					<div class="b-feedback-item-data">
+						<div class="b-feedback-item-data__author"><span>Константин Васильевич</span></div>
+						<div class="b-feedback-item-data__date"><span>02.02.2016</span></div>
+						<div class="b-feedback-data-text__text"><span>Сегодня пробовала пироги Алана Мама первый раз. Очень вкусно!!! Пробовала с курицей и грибами, с сыром, с мясом, с вишней — вкусно все! Очень сочные и свежие пироги, гораздо вкуснее, чем привычная уже пицца.</span></div>
+					</div>
+				</div>
+
+				<div class="b-feedback-item">
+					<div class="b-feedback-item-image">
+						<div style="background-image:url(assets/img/no-photo.png)">
+							<p>«</p>
+						</div>
+					</div>
+					<div class="b-feedback-item-data">
+						<div class="b-feedback-item-data__author"><span>Константин Васильевич</span></div>
+						<div class="b-feedback-item-data__date"><span>02.02.2016</span></div>
+						<div class="b-feedback-data-text__text"><span>Сегодня пробовала пироги Алана Мама первый раз. Очень вкусно!!! Пробовала с курицей и грибами, с сыром, с мясом, с вишней — вкусно все! Очень сочные и свежие пироги, гораздо вкуснее, чем привычная уже пицца.</span></div>
+					</div>
+				</div>
+
+				<div class="b-feedback-item">
+					<div class="b-feedback-item-image">
+						<div style="background-image:url(assets/img/no-photo.png)">
+							<p>«</p>
+						</div>
+					</div>
+					<div class="b-feedback-item-data">
+						<div class="b-feedback-item-data__author"><span>Константин Васильевич</span></div>
+						<div class="b-feedback-item-data__date"><span>02.02.2016</span></div>
+						<div class="b-feedback-data-text__text"><span>Сегодня пробовала пироги Алана Мама первый раз. Очень вкусно!!! Пробовала с курицей и грибами, с сыром, с мясом, с вишней — вкусно все! Очень сочные и свежие пироги, гораздо вкуснее, чем привычная уже пицца.</span></div>
+					</div>
+				</div>
+
+				<div class="b-feedback-more">
+					<button class="b-button"><span>Еще отзывы</span></button>
+				</div>
+			</div>
+			<!-- END of b-feedback -->
+
+			<!-- BEGIN of b-vacancy -->
+			<div class="p-menu-item b-vacancy">
+				<div class="p-menu-item__title"><span>По вопросам вакансий обращайтесь к Мартыновой Наталье Юрьевне</span></div>
+				<p class="b-vacancy__caption"><strong>Телефон:</strong> +7-923-418-28-64 &nbsp;&nbsp;&nbsp; <strong>Email:</strong>&nbsp;<a href="mailto:vacancy@alanamama.ru">vacancy@alanamama.ru</a></p>
+				<div class="b-vacancy__separator"></div>
+				<h2>Повар-универсал<br /></h2>
+				<p><strong>Требования:</strong><br />
+				Опыт работы<br />
+				Образование не&nbsp;ниже среднего специального<br />
+				<strong>Условия:</strong><br />
+				График работы сменный 3/3, с&nbsp;07:30 либо с&nbsp;10:00<br />
+				Возможен гибкий график<br />
+				Питание, развоз персонала<br />
+				На&nbsp;Котовского, 17</p>
+			</div>
+			<!-- END of b-vacancy -->
+		</div>
+		<!-- END of p-menu -->
+
 
 
 		<!-- BEGIN of b-content -->
 		<div class="b-content">
 			<!-- BEGIN of b-slider -->
 			<div class="b-slider">
-				<div class="my-slider">
+				<div class="slider">
 					<ul>
-						<li><div class="slider-img"><img src="assets/img/placeholder.png" /></div></li>
-						<!--<li><div class="slider-img"><img src="assets/img/placeholder.png" /></div></li>
-						<li><div class="slider-img"><img src="assets/img/placeholder.png" /></div></li>-->
+						<li><div class="slider__image"><img src="assets/img/placeholder.png" /></div></li>
+						<li><div class="slider__image"><img src="assets/img/placeholder.png" /></div></li>
+						<!--<li><div class="slider-img"><img src="assets/img/placeholder.png" /></div></li>-->
 					</ul>
 				</div>
 			</div>
@@ -148,7 +329,7 @@
 				<div class="b-product-list">
 
 					<div class="b-product">
-						<a href="#">
+						<a class="mfp-product" href="#popup-product">
 							<div class="b-product-pic">
 								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
@@ -159,10 +340,44 @@
 						<div class="b-product__desc">Филе куриное, лук репчатый, сыр Гауда, петрушка, перец острый стручковый, специи.</div>
 						<div class="b-product__caption"><span>30 см.&nbsp;&nbsp;|&nbsp;&nbsp;900 гр.&nbsp;&nbsp;|&nbsp;&nbsp;545&#160;&#8381;</span></div>
 						<div class="b-product-price">
-							<div class="b-product-price__text"><span>360&#160;&#8381;</span></div>
+							<div class="b-product-price__text b-product-price__text_promo"><span>360&#160;&#8381;</span></div>
 							<div class="b-product-price__button"><button class="b-button"><span>В корзину</span></button></div>
 						</div>
 					</div>
+					
+					<!-- BEGIN of p-product -->
+					<div id="popup-product" class="p-product mfp-hide zoom-anim-dialog">
+						<div class="p-product__image"><img src="assets/img/piece.jpg" alt=""></div>
+						<div class="p-product-info">
+							<div class="b-product__title">
+								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
+							</div>
+							<div class="b-product__desc"><strong>Состав: </strong>Филе куриное, лук репчатый, сыр Гауда, петрушка, перец острый стручковый, специи.</div>
+							<div class="b-product__desc"><strong>Энергетическая ценность (на 100&nbsp;гр.): </strong>286&nbsp;кКал.</div>
+							<div class="b-product__caption"><span>30 см.&nbsp;&nbsp;|&nbsp;&nbsp;900 гр.&nbsp;&nbsp;|&nbsp;&nbsp;545&#160;&#8381;</span></div>
+							<div class="b-product-price b-product-price_popup">
+								<div class="b-product-price__text b-product-price__text_promo"><span>360&#160;&#8381;</span></div>
+								<div class="b-product-price__button b-product-price__button_right">
+									<button class="b-button"><span>В корзину</span></button>
+									<div class="b-count-switch">
+										<div class="b-count-switch__button">
+											<button class="b-button b-button_nohover"><span>–</span></button>
+										</div>
+										<div class="b-count-switch__input">
+											<input type="text" maxlength="3" disabled value="1">
+										</div>
+										<div class="b-count-switch__button">
+											<button class="b-button b-button_nohover"><span>+</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p-product-text">
+							<p>Сочный пирог с неповторимым легким вкусом и ароматом. Нежное куриное филе отлично сочетается с обжаренным луком, свежей зеленью и расплавленным сыром. В результате — приятная сытость при умеренной калорийности. Хорошо сочетается с чаем, соками, кисломолочными напитками и белым вином.</p>
+						</div>
+					</div>
+					<!-- END of p-product -->
 
 					<div class="b-product">
 						<a href="#">

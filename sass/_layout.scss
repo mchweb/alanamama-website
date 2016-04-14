@@ -17,4 +17,8 @@
 		padding-left:1em;
 		padding-right:1em;
 	}
+	@media (max-width: 400px) {
+		padding-left:$base-d*2em;
+		padding-right:$base-d*2em;
+	}
 }
