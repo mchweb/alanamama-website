@@ -67,27 +67,27 @@ $( document ).ajaxStop(function() {
 
 $(document).ready(function(){
 	$(".main-nav__trigger").hover(function(){
-		$(".main-nav-list").addClass("main-nav-list_show");
+		$(".main-nav-list").addClass("main-nav-list_open");
 	});
 	$(".main-nav").mouseleave(function(){
-		$(".main-nav-list").removeClass("main-nav-list_show");
+		$(".main-nav-list").removeClass("main-nav-list_open");
 	});
 	$(".mobile-nav__trigger").click(function(){
 		var x = $(".b-nav");
-		if (x.hasClass("b-nav_show")){
+		if (x.hasClass("b-nav_open")){
 			closeMenuMobile();
 		}else{
 			$(".hamburger").addClass("is-active");
-			$(".b-nav").slideDown("fast");
-			$(".b-nav").addClass("b-nav_show");
+			//$(".b-nav").slideDown("fast");
+			$(".b-nav").addClass("b-nav_open");
 		}
 		
 	});
 	
 	function closeMenuMobile(){
 		$(".hamburger").removeClass("is-active");
-		$(".b-nav").slideUp("fast");
-		$(".b-nav").removeClass("b-nav_show");
+		//$(".b-nav").slideUp("fast");
+		$(".b-nav").removeClass("b-nav_open");
 	}
 	
 	$(".nav-item").each(function(){
@@ -135,13 +135,21 @@ $(document).ready(function(){
 	$('.b-header').hover(null, hideCart);
 
 
-	
-
-
+	$(".menu-nav-list__item").each(function(){
+		$(this).on("click", closeMobileTabs);
+	});
+	$(".p-menu-item").each(function(){
+		$(this).on("click", closeMobileTabs);
+	});
 });
 
 
-
+function openMobileTabs(){
+	$('.p-menu-nav').addClass("p-menu-nav_open");
+}
+function closeMobileTabs(){
+	$('.p-menu-nav').removeClass("p-menu-nav_open");
+}
 
 ymaps.ready(init);
 var myMap;
@@ -156,7 +164,7 @@ function init(){
     myMap.geoObjects.add(myPlacemark);
 }
 
-
+/*
 (function($) {
 $(function() {
 
@@ -167,11 +175,27 @@ $(function() {
   });
 
 });
-})(jQuery);
+})(jQuery);*/
 
 function openTab(x){
 	$('.menu-nav-list__item_current').removeClass('menu-nav-list__item_current');
 	$('.p-menu-item_current').removeClass('p-menu-item_current');
 	$('.menu-'+x).addClass('menu-nav-list__item_current');
 	$('.b-'+x).addClass('p-menu-item_current');
+	var y ="";
+	switch(x){
+		case "promo":
+			y = "Акции";
+			break;
+		case "feedback":
+			y = "Отзывы";
+			break;
+		case "deliv":
+			y = "Условия доставки";
+			break;
+		case "vacancy":
+			y = "Вакансии";
+			break;
+	}
+	$('.p-menu-item-mobile__title span').html(y);
 }

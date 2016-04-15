@@ -52,10 +52,21 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"contents": "<!doctype html>\n<html lang=\"ru\">\n	<head>\n		<meta charset=\"utf-8\">\n		<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n		\n		<title>АланаМама — Большие, сочные, горячие пироги с доставкой по Томску</title>\n		<meta name=\"description\" content=\"Приготовленные специально для Вас, большие, сочные, горячие пироги «АланаМама». Нежное и тонкое тесто, вкусные и сочные начинки из мяса, сыра, зелени, овощей или фруктов. Пироги украсят любой праздничный стол! Служба доставки привезет Ваш пирог домой или в офис.\">\n		\n		<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\"/>\n		<link rel=\"apple-touch-icon\" href=\"assets/img/apple-touch-icon.png\">\n		\n		<!--[if lt IE 9]>\n			<script src=\"js/vendor/html5shiv.min.js\"></script>\n		<![endif]-->\n\n		<!-- build:css assets/css/screen.min.css -->\n		<link rel=\"stylesheet\" media=\"screen\" href=\"assets/css/screen.css\">\n		<!-- /build -->\n	</head>\n	<body>\n\n\n		<!--[if lt IE 10]>\n			<p style=\"text-align:center;font-size:20px;background:white;width:100%;z-index:10000;padding:20px 0px\"><strong>Кажется, ваш браузер безнадежно устарел.</strong> Скорее всего, сайт будет отображаться и работать некорректно.<br/>Пожалуйста, <a style=\"color:red\" href=\"http://browsehappy.com/\" target=\"_blank\">установите с одного из официальных сайтов</a> новую версию своего браузера.<br/></p>\n		<![endif]-->\n\n		<div class=\"b-sticky\">\n			<!-- BEGIN of b-header -->\n			<header class=\"b-header\">\n				<div class=\"wrap\">\n					<div class=\"mobile-nav__trigger\">\n						<button class=\"hamburger hamburger--slider\" type=\"button\">\n						  <span class=\"hamburger-box\">\n						    <span class=\"hamburger-inner\"></span>\n						  </span>\n						</button>\n					</div>\n					<a href=\"#\">\n						<img class=\"b-header__logo\" src=\"assets/img/header-logo.png\" alt=\"\">\n					</a>\n					\n					<div class=\"b-header__caption\">\n						<h1>Доставка пирогов в Томске.<br>Много. Сочно. Горячо.</h1>\n					</div>\n					<a href=\"http://vk.com/alanamama\" target=\"_blank\"><img class=\"b-header__vk\" src=\"assets/img/header-vk.png\" alt=\"\"></a>\n					<div class=\"b-header-phone\">\n						<a href=\"tel:+73822209209\"><img class=\"b-header-phone__icon\" src=\"assets/img/header-phone.png\" alt=\"\">\n						<div class=\"b-header-phone__caption\"><span>209-209</span></div>\n						</a>\n					</div>\n					<div class=\"b-header-cart\">\n						<div class=\"b-header-cart__sum\"><span>741</span><span>&#160;&#8381;</span></div>\n\n						<div class=\"b-header-cart-button\">\n							<img class=\"b-header-cart-button__icon\" src=\"assets/img/header-cart.png\" alt=\"\">\n							<div class=\"b-header-cart-button__caption\"><span>Корзина</span></div>\n							<div class=\"b-header-cart-button__counter\"><p>4</p></div>\n						</div>\n\n						<!-- BEGIN of b-cart -->\n						<div class=\"b-cart\">\n							<div class=\"b-cart__title\"><span>В вашей корзине:</span></div>\n							<div class=\"b-cart-list\">\n								<div class=\"b-cart-item\">\n									<div class=\"b-cart-item__title\"><span>Пирог с курицей, сыром и грибами, и с сосиками, и с мясом твоего котика</span></div>\n									<div class=\"b-cart-item-counter\">\n										<div class=\"b-count-switch\">\n											<div class=\"b-cart-item-counter__button b-count-switch__button\">\n												<button class=\"b-button b-button_nohover b-button_sm\"><span>–</span></button>\n											</div>\n											<div class=\"b-count-switch__input b-count-switch__input_sm\">\n												<input type=\"text\" maxlength=\"3\" disabled value=\"1\">\n											</div>\n											<div class=\"b-cart-item-counter__button b-count-switch__button\">\n												<button class=\"b-button b-button_nohover b-button_sm\"><span>+</span></button>\n											</div>\n										</div>\n									</div>\n									<div class=\"b-cart-item__price\"><span>545&#160;&#8381;</span></div>\n									<div class=\"b-cart-item-remove\"><button class=\"b-cart-item-remove__button\"></button></div>\n								</div>\n							</div>\n							<div class=\"b-cart-total\">\n								<div class=\"b-cart-total__sum\"><p>Сумма заказа: <span>741&#160;&#8381;</span></p></div>\n								<div class=\"b-cart-total__button\"><button class=\"b-button\"><span>Перейти к оформлению</span></button></div>\n							</div>\n						</div>\n						<!-- END of b-cart -->\n					</div>\n					<div class=\"b-header__logo_inline\">\n						<a href=\"#\"><img src=\"assets/img/header-logo-inline.png\" alt=\"\"></a>\n					</div>\n				</div>\n			</header>\n			<!-- END of b-header -->\n\n			<!-- BEGIN of b-nav -->\n			<div class=\"b-nav\">\n				<div class=\"wrap nav\">\n					<div class=\"phone-nav nav-item\">\n						<span><a href=\"tel:+73822209209\">Позвонить: 209-209</a></span>\n					</div>\n					<nav class=\"catalog-nav\">\n						<ul class=\"catalog-nav-list\">\n							<a href=\"#\"><li class=\"catalog-nav-list__item nav-item catalog-nav-list__item_first\"><span>Пироги</span></li></a>\n							<a href=\"#\"><li class=\"catalog-nav-list__item nav-item\"><span>Пицца</span></li></a>\n							<a href=\"#\"><li class=\"catalog-nav-list__item nav-item\"><span>Закуски</span></li></a>\n							<a href=\"#\"><li class=\"catalog-nav-list__item nav-item\"><span>Напитки</span></li></a>\n						</ul>\n					</nav>\n					<nav class=\"main-nav\">\n						<div class=\"main-nav__trigger\"><span>Информация</span></div>\n						<ul class=\"main-nav-list\">\n							<a class=\"mfp-link\" href=\"#p-menu\" onclick=\"openTab('promo')\"><li class=\"main-nav-list__item nav-item\"><span>Акции</span></li></a>\n							<a class=\"mfp-link\" href=\"#p-menu\" onclick=\"openTab('feedback')\"><li class=\"main-nav-list__item nav-item\"><span>Отзывы</span></li></a>\n							<a class=\"mfp-link\" href=\"#p-menu\" onclick=\"openTab('deliv')\"><li class=\"main-nav-list__item nav-item\"><span>Условия доставки</span></li></a>\n							<a class=\"mfp-link\" href=\"#p-menu\" onclick=\"openTab('vacancy')\"><li class=\"main-nav-list__item nav-item main-nav-list__item_last\"><span>Вакансии</span></li></a>\n						</ul>\n					</nav>\n				</div>\n			</div>\n			<!-- END of b-nav -->\n		</div>\n\n		\n\n		<!-- BEGIN of b-content -->\n		<div class=\"b-content\">\n\n\n			<!-- BEGIN of b-cat -->\n			<div class=\"wrap b-order\">\n				<div class=\"b-order-left\">\n					<div class=\"b-cat\">\n						<div class=\"b-cat__heading\">\n							<h2>Ваша корзина</h2>\n						</div>\n					</div>\n\n					<div class=\"b-cart-list b-cart-list_full\">\n						<div class=\"b-cart-item\">\n							<div class=\"b-cart-item__image\"><img src=\"assets/img/piece.jpg\" alt=\"\"></div>\n							<div class=\"b-cart-item-container\">\n								<div class=\"b-cart-item__title b-cart-item__title_full\"><span>Пирог с курицей, сыром и грибами, и с мясом твоего котика</span></div>\n							<div class=\"b-cart-item-counter\">\n									<div class=\"b-count-switch\">\n										<div class=\"b-cart-item-counter__button b-count-switch__button b-cart-item-counter__button_nohide\">\n											<button class=\"b-button b-button_nohover b-button_sm\"><span>–</span></button>\n										</div>\n										<div class=\"b-count-switch__input b-count-switch__input_sm\">\n											<input type=\"text\" maxlength=\"3\" disabled value=\"1\">\n										</div>\n										<div class=\"b-cart-item-counter__button b-count-switch__button b-cart-item-counter__button_nohide\">\n											<button class=\"b-button b-button_nohover b-button_sm\"><span>+</span></button>\n										</div>\n									</div>\n								</div>\n								<div class=\"b-cart-item__price\"><span>545&#160;&#8381;</span></div>\n								<div class=\"b-cart-item-remove\"><button class=\"b-cart-item-remove__button\"></button></div>\n							</div>\n						</div>\n					</div>\n\n					<div class=\"b-finish-order\">\n						<div class=\"b-finish-order__sum\"><span>Итого: <strong>545&#160;&#8381;</strong></span></div>\n						<div class=\"b-finish-order__button\">\n							<button class=\"b-button b-button-big\"><span>Оформить заказ</span></button>\n						</div>\n\n					</div>\n\n\n					<div class=\"b-cat_sm\">\n						<h2>Соусы</h2>\n					</div>\n\n					<div class=\"b-product-list\">\n						<article class=\"b-product b-product_sm\">\n							<a class=\"mfp-product\" href=\"#popup-product1\">\n								<div class=\"b-product-pic\">\n									<img src=\"assets/img/ph.jpg\" alt=\"\" class=\"b-product-pic__image\">\n								</div>\n							</a>\n							<header class=\"b-product__title b-product__title_sm\">\n								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>\n							</header>\n							\n							<footer class=\"b-product-price\">\n								<div class=\"b-product-price__text\"><span>360&#160;&#8381;</span></div>\n								<div class=\"b-product__caption b-product__caption_inline\"><span>900 гр.</span></div>\n								<div class=\"b-count-switch b-count-switch_noinline\">\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>–</span></button>\n									</div>\n									<div class=\"b-count-switch__input b-count-switch__input_sm\">\n										<input type=\"text\" maxlength=\"3\" disabled value=\"0\">\n									</div>\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>+</span></button>\n								</div>\n							</div>\n							</footer>\n						</article>\n\n						<article class=\"b-product b-product_sm\">\n							<a class=\"mfp-product\" href=\"#popup-product1\">\n								<div class=\"b-product-pic\">\n									<img src=\"assets/img/ph.jpg\" alt=\"\" class=\"b-product-pic__image\">\n								</div>\n							</a>\n							<header class=\"b-product__title b-product__title_sm\">\n								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>\n							</header>\n							\n							<footer class=\"b-product-price\">\n								<div class=\"b-product-price__text\"><span>360&#160;&#8381;</span></div>\n								<div class=\"b-product__caption b-product__caption_inline\"><span>900 гр.</span></div>\n								<div class=\"b-count-switch b-count-switch_noinline\">\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>–</span></button>\n									</div>\n									<div class=\"b-count-switch__input b-count-switch__input_sm\">\n										<input type=\"text\" maxlength=\"3\" disabled value=\"0\">\n									</div>\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>+</span></button>\n								</div>\n							</div>\n							</footer>\n						</article>\n\n						<article class=\"b-product b-product_sm\">\n							<a class=\"mfp-product\" href=\"#popup-product1\">\n								<div class=\"b-product-pic\">\n									<img src=\"assets/img/ph.jpg\" alt=\"\" class=\"b-product-pic__image\">\n								</div>\n							</a>\n							<header class=\"b-product__title b-product__title_sm\">\n								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>\n							</header>\n							\n							<footer class=\"b-product-price\">\n								<div class=\"b-product-price__text\"><span>360&#160;&#8381;</span></div>\n								<div class=\"b-product__caption b-product__caption_inline\"><span>900 гр.</span></div>\n								<div class=\"b-count-switch b-count-switch_noinline\">\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>–</span></button>\n									</div>\n									<div class=\"b-count-switch__input b-count-switch__input_sm\">\n										<input type=\"text\" maxlength=\"3\" disabled value=\"0\">\n									</div>\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>+</span></button>\n								</div>\n							</div>\n							</footer>\n						</article>\n\n						<article class=\"b-product b-product_sm\">\n							<a class=\"mfp-product\" href=\"#popup-product1\">\n								<div class=\"b-product-pic\">\n									<img src=\"assets/img/ph.jpg\" alt=\"\" class=\"b-product-pic__image\">\n								</div>\n							</a>\n							<header class=\"b-product__title b-product__title_sm\">\n								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>\n							</header>\n							\n							<footer class=\"b-product-price\">\n								<div class=\"b-product-price__text\"><span>360&#160;&#8381;</span></div>\n								<div class=\"b-product__caption b-product__caption_inline\"><span>900 гр.</span></div>\n								<div class=\"b-count-switch b-count-switch_noinline\">\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>–</span></button>\n									</div>\n									<div class=\"b-count-switch__input b-count-switch__input_sm\">\n										<input type=\"text\" maxlength=\"3\" disabled value=\"0\">\n									</div>\n									<div class=\"b-count-switch__button\">\n										<button class=\"b-button b-button_nohover b-button_sm\"><span>+</span></button>\n								</div>\n							</div>\n							</footer>\n						</article>\n\n\n						<div class=\"b-product b-product_dummy1\"></div>\n						<div class=\"b-product b-product_dummy2\"></div>\n						<div class=\"b-product b-product_dummy3\"></div>\n					</div>\n				</div><!--\n				--><div class=\"b-order-right\">\n					<div class=\"b-delivery\">\n						<div class=\"b-delivery-text\">\n							<ul class=\"b-delivery-list\">\n								<li class=\"b-delivery-list__item\"><span>—&nbsp;Доставка ежедневно с 10:30 до 21:00, 60–90 мин.</span></li>\n								<li class=\"b-delivery-list__item\"><span>—&nbsp;Минимальная сумма заказа: 400&#160;&#8381;</span></li>\n								<li class=\"b-delivery-list__item\"><span>—&nbsp;Оплата наличными или банковской картой</span></li>\n							<li class=\"b-delivery-list__item\"><span>—&nbsp;Скидки и <a class=\"mfp-link\" href=\"#p-menu\" onclick=\"openTab('promo')\">акции</a> не суммируются</span></li>\n								<li class=\"b-delivery-list__item\"><span>—&nbsp;Доставка по городу бесплатно (<a class=\"mfp-link\" href=\"#p-menu\" onclick=\"openTab('deliv')\">подробные условия</a>)</span></li>\n							</ul>\n						</div>\n					</div>\n				</div>\n			</div>\n			<!-- END of b-cat -->\n			\n		</div>\n		<!-- END of b-content -->\n\n\n\n\n		<!-- BEGIN of b-footer -->\n		<footer class=\"b-footer b-footer_sticky\">\n			<div class=\"wrap\">\n				<div class=\"b-footer-info\">\n					<div class=\"b-order-info__title\"><p>К оплате: <strong>769&#160;&#8381;</strong></p></div>\n					<div class=\"b-order-info__caption\"><p>Осталось уточнить адрес доставки и метод оплаты</p></div>\n				</div>\n				<div class=\"b-footer-button\">\n					<button class=\"b-button\"><span>Далее&nbsp;»</span></button>\n				</div>\n			</div>\n		</footer>\n		<!-- END of b-footer -->\n\n\n		<div id=\"updown\"><div id=\"updown-container\"></div></div>\n		<!-- Font loader -->\n		<script src=\"http://use.edgefonts.net/source-sans-pro:n4,n6,n7,n9:all.js\"></script>\n		<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js\"></script>\n		<script>window.jQuery || document.write('<script src=\"js/vendor/jquery.min.js\"><\\/script>')</script>\n		<script src=\"https://api-maps.yandex.ru/2.1/?lang=ru_RU\" type=\"text/javascript\"></script>\n		<!-- build:js assets/js/main.min.js -->\n		<script src=\"assets/js/main.js\"></script>\n		<!-- /build -->\n	</body>\n</html>\n",
+			"file": "cart.html",
+			"file_size": 15659,
+			"file_write_time": 131051980967668317,
 			"settings":
 			{
-				"buffer_size": 28904,
+				"buffer_size": 14603,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/main.js",
+			"settings":
+			{
+				"buffer_size": 24224,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +74,7 @@
 			"file": "sass/_main.scss",
 			"settings":
 			{
-				"buffer_size": 21247,
+				"buffer_size": 25524,
 				"line_ending": "Unix"
 			}
 		},
@@ -72,14 +83,6 @@
 			"settings":
 			{
 				"buffer_size": 258,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/js/main.js",
-			"settings":
-			{
-				"buffer_size": 22629,
 				"line_ending": "Unix"
 			}
 		},
@@ -122,12 +125,28 @@
 				"buffer_size": 1777,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "sass/_anim.scss",
+			"settings":
+			{
+				"buffer_size": 1242,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 30533,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 150.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -227,7 +246,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -244,6 +263,11 @@
 	},
 	"file_history":
 	[
+		"/C/Users/writt/Desktop/alana/index.html",
+		"/C/Users/writt/Desktop/alana/cart.html",
+		"/C/Users/writt/Desktop/alana/Gruntfile.js",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/writt/Desktop/alana/sass/_common.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/hamburgers/hamburgers.scss",
 		"/C/Users/writt/Desktop/alana/assets/css/screen.css",
@@ -257,8 +281,6 @@
 		"/C/Users/writt/Desktop/alana/sass/_typography.scss",
 		"/C/Users/writt/Desktop/alana/sass/_var.scss",
 		"/C/Users/writt/Desktop/alana/package.json",
-		"/C/Users/writt/Desktop/alana/Gruntfile.js",
-		"/C/Users/writt/Desktop/alana/index.html",
 		"/C/Users/writt/Desktop/alana/sass/lib/_unslider.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_normalize.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_reset.scss",
@@ -350,10 +372,8 @@
 		"/C/Users/writt/Desktop/html5-boilerplate/scss/_anim.scss",
 		"/C/Users/writt/Desktop/html5-boilerplate/scss/normalize.scss",
 		"/C/Users/writt/Desktop/html5-boilerplate/scss/reset.scss",
-		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
 		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/di-snippet.sublime-snippet",
 		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/di-snippet.snippet",
 		"/C/Users/writt/Desktop/test/abyrvalg/plus.txt"
@@ -374,6 +394,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"b-count-switch__button",
+			"b-cart-item-remove__button",
+			"b-cart-item__image",
+			"b-order-info__caption",
+			"b-product",
+			"b-product_small",
+			"left",
+			"});",
+			";\n",
+			"b-nav_open",
+			"b-nav_show",
+			"show",
+			"main-nav-list_show",
+			"_open",
+			"box-shadow",
+			"item_current",
 			"remove",
 			"7em",
 			"b-cart-item-counter__button",
@@ -461,18 +497,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "cart.html",
 					"settings":
 					{
-						"buffer_size": 28904,
+						"buffer_size": 14603,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16481,
-								16481
+								5882,
+								5882
 							]
 						],
 						"settings":
@@ -481,25 +517,51 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6228.0,
+						"translation.y": 2357.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "sass/_main.scss",
+					"file": "assets/js/main.js",
 					"settings":
 					{
-						"buffer_size": 21247,
+						"buffer_size": 24224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15629,
-								15629
+								20725,
+								20725
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sass/_main.scss",
+					"settings":
+					{
+						"buffer_size": 25524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16697,
+								16697
 							]
 						],
 						"settings":
@@ -509,13 +571,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 15681.0,
+						"translation.y": 17337.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "sass/_var.scss",
 					"settings":
 					{
@@ -533,32 +595,6 @@
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/js/main.js",
-					"settings":
-					{
-						"buffer_size": 22629,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20015,
-								20015
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -703,6 +739,62 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "sass/_anim.scss",
+					"settings":
+					{
+						"buffer_size": 1242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 30533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27664,
+								27664
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6739.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -738,6 +830,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
 	"replace":
 	{
 		"height": 70.0

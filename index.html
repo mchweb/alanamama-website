@@ -38,15 +38,15 @@
 						</button>
 					</div>
 					<a href="#">
-						<img class="b-header__logo" src="assets/img/header-logo.png" alt="">
+						<img width=182 height=144 class="b-header__logo" src="assets/img/header-logo.png" alt="">
 					</a>
 					
 					<div class="b-header__caption">
 						<h1>Доставка пирогов в Томске.<br>Много. Сочно. Горячо.</h1>
 					</div>
-					<a href="http://vk.com/alanamama" target="_blank"><img class="b-header__vk" src="assets/img/header-vk.png" alt=""></a>
+					<a href="http://vk.com/alanamama" target="_blank"><img width=84 height=84 class="b-header__vk" src="assets/img/header-vk.png" alt=""></a>
 					<div class="b-header-phone">
-						<a href="tel:+73822209209"><img class="b-header-phone__icon" src="assets/img/header-phone.png" alt="">
+						<a href="tel:+73822209209"><img width=84 height=84 class="b-header-phone__icon" src="assets/img/header-phone.png" alt="">
 						<div class="b-header-phone__caption"><span>209-209</span></div>
 						</a>
 					</div>
@@ -54,7 +54,7 @@
 						<div class="b-header-cart__sum"><span>741</span><span>&#160;&#8381;</span></div>
 
 						<div class="b-header-cart-button">
-							<img class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="">
+							<img width=72 height=72 class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="">
 							<div class="b-header-cart-button__caption"><span>Корзина</span></div>
 							<div class="b-header-cart-button__counter"><p>4</p></div>
 						</div>
@@ -165,7 +165,7 @@
 
 					</div>
 					<div class="b-header__logo_inline">
-						<a href="#"><img src="assets/img/header-logo-inline.png" alt=""></a>
+						<a href="#"><img width=310 height=84 src="assets/img/header-logo-inline.png" alt=""></a>
 					</div>
 				</div>
 			</header>
@@ -182,7 +182,6 @@
 							<a href="#"><li class="catalog-nav-list__item nav-item"><span>Пицца</span></li></a>
 							<a href="#"><li class="catalog-nav-list__item nav-item"><span>Закуски</span></li></a>
 							<a href="#"><li class="catalog-nav-list__item nav-item"><span>Напитки</span></li></a>
-							<a href="#"><li class="catalog-nav-list__item nav-item catalog-nav-list__item_extra"><span>Пицца и суши от Ням-Ням</span></li></a>
 						</ul>
 					</nav>
 					<nav class="main-nav">
@@ -203,32 +202,36 @@
 		<div id="p-menu" class="p-menu mfp-hide zoom-anim-dialog">
 			<nav class="p-menu-nav">
 				<ul class="menu-nav-list">
-					<li class="menu-nav-list__item menu-nav-list__item_current menu-promo"><span>Акции</span></li><!--
-					--><li class="menu-nav-list__item menu-feedback"><span>Отзывы</span></li><!--
-					--><li class="menu-nav-list__item menu-deliv"><span>Условия доставки</span></li><!--
-					--><li class="menu-nav-list__item menu-vacancy"><span>Вакансии</span></li>
+					<li class="menu-nav-list__item menu-nav-list__item_current menu-promo" onclick="openTab('promo')"><span>Акции</span></li><!--
+					--><li class="menu-nav-list__item menu-feedback" onclick="openTab('feedback')"><span>Отзывы</span></li><!--
+					--><li class="menu-nav-list__item menu-deliv" onclick="openTab('deliv')"><span>Условия доставки</span></li><!--
+					--><li class="menu-nav-list__item menu-vacancy" onclick="openTab('vacancy')"><span>Вакансии</span></li>
 				</ul>
 			</nav>
+			<div class="p-menu-item-mobile">
+					<div class="p-menu-item-mobile__title"><span>Акции</span></div><!--
+					--><div class="p-menu-item-mobile__trigger"><button onclick="openMobileTabs()"></button></div>
+				</div>
 			<!-- BEGIN of b-promo -->
 			<div class="p-menu-item b-promo p-menu-item_current">
 				<div class="p-menu-item__title"><span>Подробные условия акций уточняйте по телефону <a href="tel:+73822209209">209-209</a></span></div>
 				<div class="b-promo-item">
-					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<img width=360 height=180 class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
 					<p class="b-promo-item__title">Счастливые часы!</p>
 					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
 				</div><!--
 				--><div class="b-promo-item">
-					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<img width=360 height=180 class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
 					<p class="b-promo-item__title">Счастливые часы!</p>
 					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
 				</div><!--
 				--><div class="b-promo-item">
-					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<img width=360 height=180 class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
 					<p class="b-promo-item__title">Счастливые часы!</p>
 					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
 				</div><!--
 				--><div class="b-promo-item">
-					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<img width=360 height=180 class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
 					<p class="b-promo-item__title">Счастливые часы!</p>
 					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
 				</div>
@@ -348,9 +351,9 @@
 			<div class="b-slider">
 				<div class="slider">
 					<ul>
-						<li><div class="slider__image"><img src="assets/img/placeholder.png" /></div></li>
-						<li><div class="slider__image"><img src="assets/img/placeholder.png" /></div></li>
-						<!--<li><div class="slider-img"><img src="assets/img/placeholder.png" /></div></li>-->
+						<li><div class="slider__image"><img width=1920 height=552 src="assets/img/placeholder.png" /></div></li>
+						<li><div class="slider__image"><img width=1920 height=552 src="assets/img/placeholder.png" /></div></li>
+						<!--<li><div class="slider-img"><img width=1920 height=552 src="assets/img/placeholder.png" /></div></li>-->
 					</ul>
 				</div>
 			</div>
@@ -358,6 +361,7 @@
 
 			<!-- BEGIN of b-cat -->
 			<div class="wrap">
+			<section>
 				<div class="b-cat">
 					<div class="b-cat__heading">
 						<h2>Сытные пироги</h2>
@@ -365,55 +369,56 @@
 				</div>
 
 				<div class="b-product-list">
-
-					<div class="b-product">
+					<article itemscope itemtype="http://schema.org/Product" class="b-product">
 						<a class="mfp-product" href="#popup-product1">
 							<div class="b-product-pic">
-								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
+								<img itemprop="image" width=720 height=450 src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
 						</a>
-						<div class="b-product__title">
-							<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
-						</div>
-						<div class="b-product__desc">Филе куриное, лук репчатый, сыр Гауда, петрушка, перец острый стручковый, специи.</div>
+						<header class="b-product__title">
+							<h3 itemprop="name">Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
+						</header>
+						<div itemprop="description" class="b-product__desc">Филе куриное, лук репчатый, сыр Гауда, петрушка, перец острый стручковый, специи.</div>
 						<div class="b-product__caption"><span>30 см.&nbsp;&nbsp;|&nbsp;&nbsp;900 гр.&nbsp;&nbsp;|&nbsp;&nbsp;545&#160;&#8381;</span></div>
-						<div class="b-product-price">
+						<footer itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="b-product-price">
+							<meta itemprop="price" content="360.00">
+							<meta itemprop="priceCurrency" content="RUB">
 							<div class="b-product-price__text b-product-price__text_promo"><span>360&#160;&#8381;</span></div>
 							<div class="b-product-price__button"><button class="b-button"><span>В корзину</span></button></div>
-						</div>
-					</div>
+						</footer>
+					</article>
 					
 					<!-- BEGIN of p-product -->
-					<div id="popup-product1" class="p-product mfp-hide zoom-anim-dialog">
+					<article id="popup-product1" class="p-product mfp-hide zoom-anim-dialog">
 						<div class="p-product__image">
-							<img src="assets/img/piece.jpg" alt="">
+							<img width=710 height=710 src="assets/img/piece.jpg" alt="">
 							<div class="b-product-pic__promo b-product-pic__promo_popup b-product-pic__promo_green"><span>Хит!</span></div>
 						</div>
 						<div class="p-product-info">
-							<div class="b-product__title">
+							<header class="b-product__title">
 								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
-							</div>
+							</header>
 							<div class="b-product__desc"><strong>Состав: </strong>Филе куриное, лук репчатый, сыр Гауда, петрушка, перец острый стручковый, специи.</div>
 							<div class="b-product__desc"><strong>Энергетическая ценность (на 100&nbsp;гр.): </strong>286&nbsp;кКал.</div>
 							<div class="b-product__caption"><span>30 см.&nbsp;&nbsp;|&nbsp;&nbsp;900 гр.&nbsp;&nbsp;|&nbsp;&nbsp;545&#160;&#8381;</span></div>
-							<div class="b-product-price b-product-price_popup">
+							<footer class="b-product-price b-product-price_popup">
 								<div class="b-product-price__text b-product-price__text_promo"><span>360&#160;&#8381;</span></div>
 								<div class="b-product-price__button b-product-price__button_right">
 									<button class="b-button"><span>В корзину</span></button>
 								</div>
-							</div>
+							</footer>
 						</div>
-						<div class="p-product-text">
+						<aside class="p-product-text">
 							<p>Сочный пирог с неповторимым легким вкусом и ароматом. Нежное куриное филе отлично сочетается с обжаренным луком, свежей зеленью и расплавленным сыром. В результате — приятная сытость при умеренной калорийности. Хорошо сочетается с чаем, соками, кисломолочными напитками и белым вином.</p>
-						</div>
-					</div>
+						</aside>
+					</article>
 					<!-- END of p-product -->
 
 					<div class="b-product">
 						<a class="mfp-product" href="#popup-product2">
 							<div class="b-product-pic">
 								<div class="b-product-pic__promo b-product-pic__promo_green"><span>Хит!</span></div>
-								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
+								<img width=720 height=450 src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
 						</a>
 						<div class="b-product__title">
@@ -440,7 +445,7 @@
 
 					<!-- BEGIN of p-product -->
 					<div id="popup-product2" class="p-product mfp-hide zoom-anim-dialog">
-						<div class="p-product__image"><img src="assets/img/piece.jpg" alt=""></div>
+						<div class="p-product__image"><img width=710 height=710 src="assets/img/piece.jpg" alt=""></div>
 						<div class="p-product-info">
 							<div class="b-product__title">
 								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
@@ -474,7 +479,7 @@
 					<div class="b-product">
 						<a href="#">
 							<div class="b-product-pic">
-								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
+								<img width=720 height=450 src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
 						</a>
 						<div class="b-product__title">
@@ -491,7 +496,7 @@
 						<a href="#">
 							<div class="b-product-pic">
 								<div class="b-product-pic__promo b-product-pic__promo_orange"><span>Новинка!</span></div>
-								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
+								<img width=720 height=450 src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
 						</a>
 						<div class="b-product__title">
@@ -508,7 +513,7 @@
 						<a href="#">
 							<div class="b-product-pic">
 								<div class="b-product-pic__promo b-product-pic__promo_red"><span>Остро!</span></div>
-								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
+								<img width=720 height=450 src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
 						</a>
 						<div class="b-product__title">
@@ -524,7 +529,7 @@
 					<div class="b-product">
 						<a href="#">
 							<div class="b-product-pic">
-								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
+								<img width=720 height=450 src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
 						</a>
 						<div class="b-product__title">
@@ -542,7 +547,9 @@
 					<div class="b-product b-product_dummy2"></div>
 					<div class="b-product b-product_dummy3"></div>
 				</div>
+			</section>
 			</div>
+
 			<!-- END of b-cat -->
 
 			<!-- BEGIN of b-pre-footer -->
@@ -574,20 +581,20 @@
 				<div class="b-footer-contacts">
 					<a href="#">
 						<div class="b-footer-contacts-phone">
-							<img class="b-footer-contacts-phone__icon" src="assets/img/header-phone.png" alt=""></img>
+							<img width=84 height=84 class="b-footer-contacts-phone__icon" src="assets/img/header-phone.png" alt=""></img>
 							<div class="b-footer-contacts-phone__caption"><span>209-209</span></div>
 						</div>
 					</a>
 					<div class="b-footer-contacts-address"><a href="">Томск, ул. Котовского, 17</a></div>
 				</div>
-				<a href="http://provocationstudio.ru/?from=alanamama.ru"><img class="b-footer-copyright" src="assets/img/footer-copy.png" alt=""></a>
+				<a href="http://provocationstudio.ru/?from=alanamama.ru"><img width=288 height=96 class="b-footer-copyright" src="assets/img/footer-copy.png" alt=""></a>
 			</div>
 		</footer>
 		<!-- END of b-footer -->
 
 		<!-- BEGIN of b-call -->
 		<div class="b-call">
-			<a href="tel:+73822209209"><img class="b-call__icon" src="assets/img/footer-phone.png"></a>
+			<a href="tel:+73822209209"><img width=144 height=144 class="b-call__icon" src="assets/img/footer-phone.png"></a>
 		</div>
 		<!-- END of b-call -->
 		
