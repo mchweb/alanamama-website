@@ -188,10 +188,10 @@
 					<nav class="main-nav">
 						<div class="main-nav__trigger"><span>Информация</span></div>
 						<ul class="main-nav-list">
-							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item"><span>Акции</span></li></a>
-							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item"><span>Отзывы</span></li></a>
-							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item"><span>Условия доставки</span></li></a>
-							<a class="mfp-link" href="#p-menu"><li class="main-nav-list__item nav-item main-nav-list__item_last"><span>Вакансии</span></li></a>
+							<a class="mfp-link" href="#p-menu" onclick="openTab('promo')"><li class="main-nav-list__item nav-item"><span>Акции</span></li></a>
+							<a class="mfp-link" href="#p-menu" onclick="openTab('feedback')"><li class="main-nav-list__item nav-item"><span>Отзывы</span></li></a>
+							<a class="mfp-link" href="#p-menu" onclick="openTab('deliv')"><li class="main-nav-list__item nav-item"><span>Условия доставки</span></li></a>
+							<a class="mfp-link" href="#p-menu" onclick="openTab('vacancy')"><li class="main-nav-list__item nav-item main-nav-list__item_last"><span>Вакансии</span></li></a>
 						</ul>
 					</nav>
 				</div>
@@ -203,14 +203,14 @@
 		<div id="p-menu" class="p-menu mfp-hide zoom-anim-dialog">
 			<nav class="p-menu-nav">
 				<ul class="menu-nav-list">
-					<a href="#"><li class="menu-nav-list__item menu-nav-list__item_current"><span>Акции</span></li></a><!--
-					--><a href="#"><li class="menu-nav-list__item"><span>Отзывы</span></li></a><!--
-					--><a href="#"><li class="menu-nav-list__item"><span>Условия доставки</span></li></a><!--
-					--><a href="#"><li class="menu-nav-list__item"><span>Вакансии</span></li></a>
+					<li class="menu-nav-list__item menu-nav-list__item_current menu-promo"><span>Акции</span></li><!--
+					--><li class="menu-nav-list__item menu-feedback"><span>Отзывы</span></li><!--
+					--><li class="menu-nav-list__item menu-deliv"><span>Условия доставки</span></li><!--
+					--><li class="menu-nav-list__item menu-vacancy"><span>Вакансии</span></li>
 				</ul>
 			</nav>
 			<!-- BEGIN of b-promo -->
-			<div class="p-menu-item b-promo">
+			<div class="p-menu-item b-promo p-menu-item_current">
 				<div class="p-menu-item__title"><span>Подробные условия акций уточняйте по телефону <a href="tel:+73822209209">209-209</a></span></div>
 				<div class="b-promo-item">
 					<img class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
@@ -283,23 +283,6 @@
 			</div>
 			<!-- END of b-feedback -->
 
-			<!-- BEGIN of b-vacancy -->
-			<div class="p-menu-item b-vacancy">
-				<div class="p-menu-item__title"><span>По вопросам вакансий обращайтесь к Мартыновой Наталье Юрьевне</span></div>
-				<p class="b-vacancy__caption"><strong>Телефон:</strong> +7-923-418-28-64 &nbsp;&nbsp;&nbsp; <strong>Email:</strong>&nbsp;<a href="mailto:vacancy@alanamama.ru">vacancy@alanamama.ru</a></p>
-				<div class="b-vacancy__separator"></div>
-				<h2>Повар-универсал<br /></h2>
-				<p><strong>Требования:</strong><br />
-				Опыт работы<br />
-				Образование не&nbsp;ниже среднего специального<br />
-				<strong>Условия:</strong><br />
-				График работы сменный 3/3, с&nbsp;07:30 либо с&nbsp;10:00<br />
-				Возможен гибкий график<br />
-				Питание, развоз персонала<br />
-				На&nbsp;Котовского, 17</p>
-			</div>
-			<!-- END of b-vacancy -->
-
 			<!-- BEGIN of b-deliv -->
 			<div class="p-menu-item b-deliv">
 				<div class="b-deliv__title"><p>Основные условия</p></div>
@@ -319,21 +302,41 @@
 						<th><span>Условия доставки</span></th>
 					</tr>
 					<tr>
-						<td>ул. Мостовая, п. Зональный, п. Тимирязево, п. Аникино</td>
-						<td>Платная доставка — 150 рублей</td>
+						<td>ул.&nbsp;Мостовая, п.&nbsp;Зональный, п.&nbsp;Тимирязево, п.&nbsp;Аникино</td>
+						<td>Платная доставка&nbsp;— 150 рублей</td>
 					</tr>
 					<tr>
-						<td>п. Светлый, с. Лоскутово, с. Богашёво</td>
-						<td>Платная доставка — 150 рублей</td>
+						<td>п.&nbsp;Светлый, с.&nbsp;Лоскутово, с.&nbsp;Богашёво</td>
+						<td>Платная доставка&nbsp;— 150 рублей</td>
 					</tr>
 					<tr>
-						<td>г. Северск</td>
+						<td>г.&nbsp;Северск</td>
 						<td>Доставка осуществляется на индивидуальных условиях, подробнее можно уточнить у оператора. Доставка до центрального КПП — 150 рублей</td>
 					</tr>
 				</table>
-				<div class="b-deliv__title"><p>Адрес для самовывоза</p></div>			
+				<div class="b-deliv__title"><p>Адрес для самовывоза: ул.&nbsp;Котовского,&nbsp;19</p></div>	
+				<div class="b-deliv__map" id="b-deliv__map"></div>		
 			</div>
 			<!-- END of b-deliv -->
+
+			<!-- BEGIN of b-vacancy -->
+			<div class="p-menu-item b-vacancy">
+				<div class="p-menu-item__title"><span>По вопросам вакансий обращайтесь к Мартыновой Наталье Юрьевне</span></div>
+				<p class="b-vacancy__caption"><strong>Телефон:</strong> +7-923-418-28-64 &nbsp;&nbsp;&nbsp; <strong>Email:</strong>&nbsp;<a href="mailto:vacancy@alanamama.ru">vacancy@alanamama.ru</a></p>
+				<div class="b-vacancy__separator"></div>
+				<h2>Повар-универсал<br /></h2>
+				<p><strong>Требования:</strong><br />
+				Опыт работы<br />
+				Образование не&nbsp;ниже среднего специального<br />
+				<strong>Условия:</strong><br />
+				График работы сменный 3/3, с&nbsp;07:30 либо с&nbsp;10:00<br />
+				Возможен гибкий график<br />
+				Питание, развоз персонала<br />
+				На&nbsp;Котовского, 17</p>
+			</div>
+			<!-- END of b-vacancy -->
+
+			
 		</div>
 		<!-- END of p-menu -->
 
@@ -382,7 +385,10 @@
 					
 					<!-- BEGIN of p-product -->
 					<div id="popup-product1" class="p-product mfp-hide zoom-anim-dialog">
-						<div class="p-product__image"><img src="assets/img/piece.jpg" alt=""></div>
+						<div class="p-product__image">
+							<img src="assets/img/piece.jpg" alt="">
+							<div class="b-product-pic__promo b-product-pic__promo_popup b-product-pic__promo_green"><span>Хит!</span></div>
+						</div>
 						<div class="p-product-info">
 							<div class="b-product__title">
 								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
@@ -532,8 +538,9 @@
 						</div>
 					</div>
 
-					<div class="b-product"></div>
-					<div class="b-product"></div>
+					<div class="b-product b-product_dummy1"></div>
+					<div class="b-product b-product_dummy2"></div>
+					<div class="b-product b-product_dummy3"></div>
 				</div>
 			</div>
 			<!-- END of b-cat -->
@@ -546,8 +553,8 @@
 							<li class="b-delivery-list__item"><span>—&nbsp;Доставка ежедневно с 10:30 до 21:00, 60–90 мин.</span></li>
 							<li class="b-delivery-list__item"><span>—&nbsp;Минимальная сумма заказа: 400&#160;&#8381;</span></li>
 							<li class="b-delivery-list__item"><span>—&nbsp;Оплата наличными или банковской картой</span></li>
-							<li class="b-delivery-list__item"><span>—&nbsp;Скидки и <a href="#">акции</a> не суммируются</span></li>
-							<li class="b-delivery-list__item"><span>—&nbsp;Доставка по городу бесплатно (<a href="#">подробные условия</a>)</span></li>
+							<li class="b-delivery-list__item"><span>—&nbsp;Скидки и <a class="mfp-link" href="#p-menu" onclick="openTab('promo')">акции</a> не суммируются</span></li>
+							<li class="b-delivery-list__item"><span>—&nbsp;Доставка по городу бесплатно (<a class="mfp-link" href="#p-menu" onclick="openTab('deliv')">подробные условия</a>)</span></li>
 						</ul>
 					</div>
 					<button class="b-button"><span>Перейти к оформлению</span></button>
@@ -591,6 +598,7 @@
 		<script src="http://use.edgefonts.net/source-sans-pro:n4,n6,n7,n9:all.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<!-- build:js assets/js/main.min.js -->
 		<script src="assets/js/main.js"></script>
 		<!-- /build -->

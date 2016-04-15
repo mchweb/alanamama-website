@@ -556,6 +556,21 @@ a:hover{
 		margin-right:auto;
 	}
 }
+.b-product_dummy1{
+	@media (max-width: 1400px) {
+		display:none;
+	}
+}
+.b-product_dummy2{
+	@media (max-width: 1000px) {
+		display:none;
+	}
+}
+.b-product_dummy3{
+	@media (max-width: 660px) {
+		display:none;
+	}
+}
 .b-product-pic__promo{
 	position:absolute;
 	color:white;
@@ -565,6 +580,9 @@ a:hover{
 	padding-right:$base-d*2em;
 	min-width:$base-d*25em;
 	text-align:center;
+}
+.b-product-pic__promo_popup{
+	margin-top:-$base-d*10em;
 }
 .b-product-pic__promo_orange{
 	background:$orange-clr;
@@ -810,9 +828,10 @@ a:hover{
 	}
 }
 .b-cart-item-remove__button{
+	@include adjust-font-size-to(6px);
 	border-radius:100%;
-	width:$base-d*3em;
-	height:$base-d*3em;
+	width:3em;
+	height:3em;
 	border:none;
 	background-image:url('../img/cart-remove.png');
 	background-size:contain;
@@ -820,8 +839,8 @@ a:hover{
 	-webkit-appearance: none;
 	@media (max-width: 660px) {
 		background-color:$l-red-clr;
-		width:$base-d*4em !important;
-		height:$base-d*4em;
+		width:4em;
+		height:4em;
 	}
 }
 
@@ -927,6 +946,7 @@ a:hover{
 	@include rhythm(0, 2, 2, 0);
 	padding-left:$base-d*4em;
 	padding-right:$base-d*4em;
+	cursor:pointer;
 }
 .menu-nav-list__item span{
 	color:$light-clr;
@@ -944,7 +964,12 @@ a:hover{
 .menu-nav-list__item_current span, .menu-nav-list__item_current:hover span{
 	color:black;
 }
-
+.p-menu-item {
+	display:none;
+}
+.p-menu-item_current{
+	display:block;
+}
 .p-menu-item__title{
 	@include rhythm(2, 0, 0, 3);
 	padding-left:$base-d*1.5em;
@@ -1073,7 +1098,12 @@ a:hover{
 	border-bottom:1px solid $light-clr;
 	margin-bottom:$base-d*2em;
 }
-
+.b-deliv{
+	margin-top:$base-d*2em;
+}
+.b-deliv strong{
+	font-weight:600;
+}
 .b-deliv__title p{
 	@include adjust-font-size-to(20px);
 	font-weight:700;
@@ -1087,7 +1117,7 @@ a:hover{
 	padding-right:$base-d*3em;
 }
 .b-deliv table{
-	@include rhythm(2, 0, 0, 4);
+	@include rhythm(2, 0, 0, 1);
 }
 .b-deliv table th{
 	font-weight:600;
@@ -1106,4 +1136,9 @@ a:hover{
 	@include rhythm(0, 1.5, 1.5, 0);
 	padding-left:$base-d*3em;
 	padding-right:$base-d*3em;
+}
+.b-deliv__map{
+	width:100%;
+	height:$base-d*60em;
+	@include rhythm(2, 0, 0, 0);
 }

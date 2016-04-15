@@ -55,7 +55,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 28854,
+				"buffer_size": 28904,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "sass/_main.scss",
 			"settings":
 			{
-				"buffer_size": 21254,
+				"buffer_size": 21247,
 				"line_ending": "Unix"
 			}
 		},
@@ -374,6 +374,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"remove",
 			"7em",
 			"b-cart-item-counter__button",
 			"b-cart-item-counter__button ",
@@ -455,7 +456,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -463,19 +464,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 28854,
+						"buffer_size": 28904,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16092,
-								16092
-							],
-							[
-								16137,
-								16137
+								16481,
+								16481
 							]
 						],
 						"settings":
@@ -484,7 +481,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5975.0,
+						"translation.y": 6228.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -494,15 +491,15 @@
 					"file": "sass/_main.scss",
 					"settings":
 					{
-						"buffer_size": 21254,
+						"buffer_size": 21247,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21098,
-								21098
+								15629,
+								15629
 							]
 						],
 						"settings":
@@ -512,7 +509,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 21235.0,
+						"translation.y": 15681.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

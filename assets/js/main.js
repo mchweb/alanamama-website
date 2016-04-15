@@ -134,4 +134,44 @@ $(document).ready(function(){
 	$('.b-cart').hover(null, hideCart);
 	$('.b-header').hover(null, hideCart);
 
+
+	
+
+
 });
+
+
+
+
+ymaps.ready(init);
+var myMap;
+function init(){     
+    myMap = new ymaps.Map("b-deliv__map", {
+        center: [56.460482, 84.967142],
+        zoom: 16
+    });
+    myPlacemark = new ymaps.Placemark([56.460482, 84.967142], { 
+        hintContent: 'ул.&nbsp;Котовского,&nbsp;19', 
+    });
+    myMap.geoObjects.add(myPlacemark);
+}
+
+
+(function($) {
+$(function() {
+
+  $('ul.menu-nav-list').on('click', 'li:not(.menu-nav-list__item_current)', function() {
+    $(this)
+      .addClass('menu-nav-list__item_current').siblings().removeClass('menu-nav-list__item_current')
+      .closest('div.p-menu').find('div.p-menu-item').removeClass('p-menu-item_current').eq($(this).index()).addClass('p-menu-item_current');
+  });
+
+});
+})(jQuery);
+
+function openTab(x){
+	$('.menu-nav-list__item_current').removeClass('menu-nav-list__item_current');
+	$('.p-menu-item_current').removeClass('p-menu-item_current');
+	$('.menu-'+x).addClass('menu-nav-list__item_current');
+	$('.b-'+x).addClass('p-menu-item_current');
+}
