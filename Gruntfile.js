@@ -46,6 +46,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'prod/index.html': ['index.html'],
+                    'prod/cart.html': ['cart.html']
                 }
             }
         },

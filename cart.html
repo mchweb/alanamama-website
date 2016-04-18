@@ -124,6 +124,96 @@
 			<!-- END of b-nav -->
 		</div>
 
+
+		<!-- BEGIN of p-order-form -->
+		<div class="p-order-form mfp-hide zoom-anim-dialog" id="popup-order-form">
+			<div class="form-order">
+			<div class="form__title"><p>Оформление заказа</p></div>
+			<div class="form-alert">
+				<p>Мы заполнили форму данными из вашего прошлого заказа. Если данные изменились, вы можете <a onclick="clearForm()">очистить форму</a>.</p>
+			</div>
+			<section class="form-section">
+				<div class="form-group">
+					<label class="form-group__label">Представьтесь</label>
+					<div class="form-group__input form-group__input_full"><input type="text" placeholder="Иван Иванов" name="" id=""></div>
+				</div>
+				<div class="form-group">
+					<label class="form-group__label">Телефон</label>
+					<div class="form-group__input form-group__input_full"><input type="text" placeholder="+7-912-345-67-89" name="" id=""></div>
+				</div>
+			</section>
+			<section class="form-section">
+				<div class="form-ttl"><button class="form-ttl__btn form-ttl__btn_address form-ttl__btn_active"><span>Доставить по адресу</span></button></div>
+				<div class="form-ttl form-ttl_sec"><button class="form-ttl__btn form-ttl__btn_pickup"><span>Самовывоз</span></button></div>
+
+				<div class="form-group_address form-group_active">
+					<div class="form-group">
+						<label class="form-group__label">Улица</label>
+						<div class="form-group__input form-group__input_full"><input type="text" placeholder="" name="" id=""></div>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">Номер дома</label>
+						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">Квартира (офис)</label>
+						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">Подъезд</label>
+						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+					</div>
+					<div class="form-group">
+						<label class="form-group__label">Этаж</label>
+						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+					</div>
+				</div>
+				<div class="form-group form-group_pickup">
+					<div class="checkmark"></div><span>Я сам заберу заказ по адресу ул. Котовского, 17</span>
+				</div>
+			</section>
+			<section class="form-section">
+				<div class="form-ttl_full"><span><strong>К оплате:</strong> 741&#160;&#8381;</span></div>
+				<div class="form-ttl"><button class="form-ttl__btn form-ttl__btn_cash form-ttl__btn_active"><span>Оплата наличными</span></button></div>
+				<div class="form-ttl form-ttl_sec"><button class="form-ttl__btn form-ttl__btn_card"><span>Оплата банковской картой</span></button></div>
+
+				<div class="form-group_cash form-group_active">
+					<div class="form-group">
+						<label class="form-group__label">Нужна сдача с</label>
+						<div class="form-group__input form-group__input_sm"><input type="text" placeholder="0" name="" id=""></div>
+						<button class="form-group__btn"><span>5000</span></button>
+						<button class="form-group__btn"><span>1000</span></button>
+						<button class="form-group__btn"><span>500</span></button>
+					</div>
+				</div>
+				<div class="form-group form-group_card">
+					<div class="checkmark"></div><span>Я оплачу заказ картой VISA/Mastercard</span>
+				</div>
+
+				<div class="form-group">
+					<label class="form-group__label">Число персон</label>
+					<div class="form-group__input"><input type="text" placeholder="3" name="" id=""></div>
+				</div>
+
+				<label class="form-group__label form-group__label_full">Комментарии к заказу</label>
+				<textarea class="form-group__textarea" name="" id="" rows="3" placeholder="Время доставки, наличие купона на скидку, дополнительная информация"></textarea>
+			</section>
+
+			<button class="b-button"><span>Отправить на кухню</span></button>
+			<div class="form-loader"><div class="spinner"></div></div>
+			</div>
+
+			<div class="form-success">
+				<div class="checkmark checkmark_big"></div>
+				<div class="form-success__title"><p>Ваш заказ оформлен, спасибо!</p></div>
+				<p>Наш менеджер скоро перезвонит вам для подтверждения заказа.</p>
+				<button class="form-success__btn b-button"><span>Вернуться в корзину</span></button>
+			</div>
+		</div>
+		<!-- END of p-order-form -->
+
+		
+
 		<!-- BEGIN of b-content -->
 		<div class="b-content">
 
@@ -142,7 +232,7 @@
 							<div class="b-cart-item__image"><img src="assets/img/piece.jpg" alt=""></div>
 							<div class="b-cart-item-container">
 								<div class="b-cart-item__title b-cart-item__title_full"><span>Пирог с курицей, сыром и грибами, и с мясом твоего котика</span></div>
-							<div class="b-cart-item-counter">
+								<div class="b-cart-item-counter">
 									<div class="b-count-switch">
 										<div class="b-cart-item-counter__button b-count-switch__button b-cart-item-counter__button_nohide">
 											<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
@@ -203,7 +293,7 @@
 						</article>
 
 						<article class="b-product b-product_sm">
-							<a class="mfp-product" href="#popup-product1">
+							<a class="mfp-link" href="#popup-order-form">
 								<div class="b-product-pic">
 									<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 								</div>

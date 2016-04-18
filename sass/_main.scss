@@ -504,13 +504,16 @@ a:hover{
 	font-weight:600;
 }
 .b-order-info__caption p{
-	@include adjust-font-size-to(13px);
+	@include adjust-font-size-to(12px);
 }
 .b-footer-button{
 	display:inline-block;
 	vertical-align:top;
 	padding-top:$base-d*1.5em;
-	
+	@media (max-width: 400px) {
+		padding-top:0;
+		display:block;
+	}
 }
 // POPUP
 
@@ -1344,4 +1347,225 @@ a:hover{
 }
 .b-finish-order{
 	@include rhythm(0, 2, 2, 4);
+}
+
+.p-order-form{
+	background:white;
+	padding:$base-d*4em;
+	max-width:$base-d*112em;
+	margin:0 auto;
+	@media (max-width: 500px) {
+		padding:$base-d*2em;
+	}
+}
+.form__title{
+	@include rhythm(0, 0, 0, 2);
+}
+.form__title p{
+	@include adjust-font-size-to(24px);
+	font-weight:700;
+}
+.form-section{
+	@include rhythm(0, 0, 0, 4);
+}
+.form-ttl{
+	display:inline-block;
+	width:30%;
+	@media (max-width: 660px) {
+		width:40%;
+    }
+    @media (max-width: 500px) {
+		display:block;
+		width:100%;
+    }
+}
+.form-ttl__btn, .form-group__btn {
+	border:none;
+	background:none;
+	padding:0;
+}
+.form-ttl__btn span, .form-ttl_full span{
+	@include adjust-font-size-to(18px);
+	font-weight:700;
+	color:$accent-clr;
+	border-bottom:1px solid $accent-clr;
+}
+.form-group__btn {
+	padding-right:$base-d*3em;
+}
+.form-group__btn span{
+	font-weight:700;
+	color:$accent-clr;
+	border-bottom:1px solid $accent-clr;
+}
+.form-ttl__btn_active span, .form-ttl_full span{
+	color:black;
+	border:none;
+}
+.form-ttl_full span{
+	font-weight:400;
+}
+.form-ttl_full strong{
+	font-weight:700;
+}
+.form-group{
+	@include rhythm(2, 0, 0, 2);
+}
+.form-group_address, .form-group_pickup, .form-group_cash, .form-group_card{
+	display:none;
+}
+.form-group_active{
+	display:block;
+}
+.form-group__label{
+	display:inline-block;
+	width:30%;
+	@media (max-width: 660px) {
+		width:40%;
+    }
+    @media (max-width: 500px) {
+		display:block;
+		width:100%;
+    }
+}
+.form-group__input, .form-ttl_sec {
+	display:inline-block;
+	width:65%;
+	@media (max-width: 660px) {
+		width:55%;
+    }
+    @media (max-width: 500px) {
+		display:block;
+		width:100%;
+    }
+}
+.form-group__input input, .form-group__textarea{
+	display: block;
+	width:$base-d*10em;
+	border: 1px solid #aaa;
+	padding:$base-d*0.75em $base-d*1.5em;
+	border-radius:$base-d*0.5em;
+}
+.form-group__input_sm{
+	width:20%;
+	@media (max-width: 500px) {
+		display:inline-block;
+		width:30%;
+    }
+}
+.form-group__input_full input, .form-group__label_full{
+	width:100%;
+}
+.form-group__textarea{
+	margin-top:$base-d*1em;
+	width:100%;
+	resize:none;
+}
+.form-alert{
+	background:$back-clr;
+	padding:$base-d*1.5em $base-d*2em;
+	border-radius:$base-d*1em; 
+}
+.form-alert a{
+	border-bottom:1px solid $accent-clr;
+	color:$accent-clr;
+}
+
+.checkmark{
+  display:inline-block;
+  padding:0 $base-d*0.5em;
+  margin-right:$base-d*1em;
+  
+  &:after{
+    /*Add another block-level blank space*/
+    content: '';
+    display: block;
+ 
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 10px;
+    height: 16px;
+ 
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid #000;
+    border-width: 0 4px 4px 0;
+ 
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+  }
+}
+.form-success{
+	text-align:center;
+	display:none;
+}
+.checkmark_big::after{
+	width: 60px;
+    height: 96px;
+    border-width: 0 24px 24px 0;
+    border-color:$accent-clr;
+}
+.form-success__title {
+	@include rhythm(2, 0, 0, 0);
+}
+.form-success__title p{
+	@include adjust-font-size-to(24px);
+	font-weight:700;
+}
+.form-success__btn{
+	margin-top:$base-d*2em;
+}
+.form-loader{
+	display:inline-block;
+	padding-left:$base-d*2em;
+	margin-bottom: 2px;
+	vertical-align:middle;
+}
+.spinner {
+  height: 34px;
+  width: 34px;
+  position: relative;
+  -webkit-animation: rotation .7s infinite linear;
+  -moz-animation: rotation .7s infinite linear;
+  -o-animation: rotation .7s infinite linear;
+  animation: rotation .7s infinite linear;
+  border-left: 4px solid $light-clr;
+  border-right: 4px solid $light-clr;
+  border-bottom: 4px solid $light-clr;
+  border-top: 4px solid $accent-clr;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
