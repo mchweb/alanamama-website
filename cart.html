@@ -50,45 +50,6 @@
 						<div class="b-header-phone__caption"><span>209-209</span></div>
 						</a>
 					</div>
-					<div class="b-header-cart">
-						<div class="b-header-cart__sum"><span>741</span><span>&#160;&#8381;</span></div>
-
-						<div class="b-header-cart-button">
-							<img class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="">
-							<div class="b-header-cart-button__caption"><span>Корзина</span></div>
-							<div class="b-header-cart-button__counter"><p>4</p></div>
-						</div>
-
-						<!-- BEGIN of b-cart -->
-						<div class="b-cart">
-							<div class="b-cart__title"><span>В вашей корзине:</span></div>
-							<div class="b-cart-list">
-								<div class="b-cart-item">
-									<div class="b-cart-item__title"><span>Пирог с курицей, сыром и грибами, и с сосиками, и с мясом твоего котика</span></div>
-									<div class="b-cart-item-counter">
-										<div class="b-count-switch">
-											<div class="b-cart-item-counter__button b-count-switch__button">
-												<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
-											</div>
-											<div class="b-count-switch__input b-count-switch__input_sm">
-												<input type="text" maxlength="3" disabled value="1">
-											</div>
-											<div class="b-cart-item-counter__button b-count-switch__button">
-												<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
-											</div>
-										</div>
-									</div>
-									<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
-									<div class="b-cart-item-remove"><button class="b-cart-item-remove__button"></button></div>
-								</div>
-							</div>
-							<div class="b-cart-total">
-								<div class="b-cart-total__sum"><p>Сумма заказа: <span>741&#160;&#8381;</span></p></div>
-								<div class="b-cart-total__button"><button class="b-button"><span>Перейти к оформлению</span></button></div>
-							</div>
-						</div>
-						<!-- END of b-cart -->
-					</div>
 					<div class="b-header__logo_inline">
 						<a href="#"><img src="assets/img/header-logo-inline.png" alt=""></a>
 					</div>
@@ -132,40 +93,47 @@
 			<div class="form-alert">
 				<p>Мы заполнили форму данными из вашего прошлого заказа. Если данные изменились, вы можете <a onclick="clearForm()">очистить форму</a>.</p>
 			</div>
+			<form method="POST" action="javascript:void(null);" onsubmit="sendOrder()">
 			<section class="form-section">
 				<div class="form-group">
+					<div class="form-group__invalid" id="f-name_invalid" onclick="$(this).fadeOut('fast')"><span>Введите свое имя</span></div>
 					<label class="form-group__label">Представьтесь</label>
-					<div class="form-group__input form-group__input_full"><input type="text" placeholder="Иван Иванов" name="" id=""></div>
+					<div class="form-group__input form-group__input_full"><input type="text" placeholder="Иван Иванов" name="f-name" id="f-name" required></div>
 				</div>
 				<div class="form-group">
+					<div class="form-group__invalid" id="f-phone_invalid" onclick="$(this).fadeOut('fast')"><span>Введите телефон</span></div>
 					<label class="form-group__label">Телефон</label>
-					<div class="form-group__input form-group__input_full"><input type="text" placeholder="+7-912-345-67-89" name="" id=""></div>
+					<div class="form-group__input form-group__input_full"><input type="text" placeholder="+7-912-345-67-89" name="f-phone" id="f-phone" required></div>
 				</div>
 			</section>
 			<section class="form-section">
-				<div class="form-ttl"><button class="form-ttl__btn form-ttl__btn_address form-ttl__btn_active"><span>Доставить по адресу</span></button></div>
-				<div class="form-ttl form-ttl_sec"><button class="form-ttl__btn form-ttl__btn_pickup"><span>Самовывоз</span></button></div>
+				<div class="form-ttl"><button type="button" class="form-ttl__btn form-ttl__btn_address form-ttl__btn_active"><span>Доставить по адресу</span></button></div>
+				<div class="form-ttl form-ttl_sec"><button type="button" class="form-ttl__btn form-ttl__btn_pickup"><span>Самовывоз</span></button></div>
+
+				<input type="hidden" name="f-deliv" id="f-deliv" value="1">
 
 				<div class="form-group_address form-group_active">
 					<div class="form-group">
+						<div class="form-group__invalid" id="f-addr1_invalid" onclick="$(this).fadeOut('fast')"><span>Введите улицу</span></div>
 						<label class="form-group__label">Улица</label>
-						<div class="form-group__input form-group__input_full"><input type="text" placeholder="" name="" id=""></div>
+						<div class="form-group__input form-group__input_full"><input type="text" placeholder="" name="f-addr1" id="f-addr1" required></div>
 					</div>
 					<div class="form-group">
+						<div class="form-group__invalid" id="f-addr2_invalid"  onclick="$(this).fadeOut('fast')"><span>Введите номер дома</span></div>
 						<label class="form-group__label">Номер дома</label>
-						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+						<div class="form-group__input"><input type="text" placeholder="" name="f-addr2" id="f-addr2" required></div>
 					</div>
 					<div class="form-group">
 						<label class="form-group__label">Квартира (офис)</label>
-						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+						<div class="form-group__input"><input type="text" placeholder="" name="f-addr3" id="f-addr3"></div>
 					</div>
 					<div class="form-group">
 						<label class="form-group__label">Подъезд</label>
-						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+						<div class="form-group__input"><input type="text" placeholder="" name="f-addr4" id="f-addr4"></div>
 					</div>
 					<div class="form-group">
 						<label class="form-group__label">Этаж</label>
-						<div class="form-group__input"><input type="text" placeholder="" name="" id=""></div>
+						<div class="form-group__input"><input type="text" placeholder="" name="f-addr5" id="f-addr5"></div>
 					</div>
 				</div>
 				<div class="form-group form-group_pickup">
@@ -173,17 +141,19 @@
 				</div>
 			</section>
 			<section class="form-section">
-				<div class="form-ttl_full"><span><strong>К оплате:</strong> 741&#160;&#8381;</span></div>
-				<div class="form-ttl"><button class="form-ttl__btn form-ttl__btn_cash form-ttl__btn_active"><span>Оплата наличными</span></button></div>
-				<div class="form-ttl form-ttl_sec"><button class="form-ttl__btn form-ttl__btn_card"><span>Оплата банковской картой</span></button></div>
+				<div class="form-ttl_full"><span><strong>Итого: </strong></span><span id="form-total">0</span><span>&#160;&#8381;</span></div>
+				<div class="form-ttl"><button type="button" class="form-ttl__btn form-ttl__btn_cash form-ttl__btn_active"><span>Оплата наличными</span></button></div>
+				<div class="form-ttl form-ttl_sec"><button type="button" class="form-ttl__btn form-ttl__btn_card"><span>Оплата банковской картой</span></button></div>
+
+				<input type="hidden" name="f-pay" id="f-pay" value="1">
 
 				<div class="form-group_cash form-group_active">
 					<div class="form-group">
 						<label class="form-group__label">Нужна сдача с</label>
-						<div class="form-group__input form-group__input_sm"><input type="text" placeholder="0" name="" id=""></div>
-						<button class="form-group__btn"><span>5000</span></button>
-						<button class="form-group__btn"><span>1000</span></button>
-						<button class="form-group__btn"><span>500</span></button>
+						<div class="form-group__input form-group__input_sm"><input type="text" placeholder="0" name="f-cash" id="f-cash"></div>
+						<button type="button" class="form-group__btn" onclick="setCash(5000)"><span>5000</span></button>
+						<button type="button" class="form-group__btn" onclick="setCash(1000)"><span>1000</span></button>
+						<button type="button" class="form-group__btn" onclick="setCash(500)"><span>500</span></button>
 					</div>
 				</div>
 				<div class="form-group form-group_card">
@@ -192,22 +162,25 @@
 
 				<div class="form-group">
 					<label class="form-group__label">Число персон</label>
-					<div class="form-group__input"><input type="text" placeholder="3" name="" id=""></div>
+					<div class="form-group__input"><input type="number" value="1" min="1" name="f-person" id="f-person"></div>
 				</div>
 
 				<label class="form-group__label form-group__label_full">Комментарии к заказу</label>
-				<textarea class="form-group__textarea" name="" id="" rows="3" placeholder="Время доставки, наличие купона на скидку, дополнительная информация"></textarea>
+				<textarea class="form-group__textarea" name="f-comment" id="f-comment" rows="3" placeholder="Время доставки, наличие купона на скидку, дополнительная информация"></textarea>
 			</section>
 
-			<button class="b-button"><span>Отправить на кухню</span></button>
+			<div class="b-finish-order__button">
+				<button class="b-button" type="submit"><span>Отправить на кухню</span></button>
+			</div>
 			<div class="form-loader"><div class="spinner"></div></div>
 			</div>
+			</form>
 
 			<div class="form-success">
 				<div class="checkmark checkmark_big"></div>
 				<div class="form-success__title"><p>Ваш заказ оформлен, спасибо!</p></div>
-				<p>Наш менеджер скоро перезвонит вам для подтверждения заказа.</p>
-				<button class="form-success__btn b-button"><span>Вернуться в корзину</span></button>
+				<div class="form-success__caption"><p>Наш менеджер скоро перезвонит вам для подтверждения заказа.</p></div>
+				<button class="form-success__btn b-button" onclick="$.magnificPopup.close();"><span>Вернуться на сайт</span></button>
 			</div>
 		</div>
 		<!-- END of p-order-form -->
@@ -226,35 +199,16 @@
 							<h2>Ваша корзина</h2>
 						</div>
 					</div>
-
+					
+					<p class="b-cart__empty">В корзине ничего нет.</p>
 					<div class="b-cart-list b-cart-list_full">
-						<div class="b-cart-item">
-							<div class="b-cart-item__image"><img src="assets/img/piece.jpg" alt=""></div>
-							<div class="b-cart-item-container">
-								<div class="b-cart-item__title b-cart-item__title_full"><span>Пирог с курицей, сыром и грибами, и с мясом твоего котика</span></div>
-								<div class="b-cart-item-counter">
-									<div class="b-count-switch">
-										<div class="b-cart-item-counter__button b-count-switch__button b-cart-item-counter__button_nohide">
-											<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
-										</div>
-										<div class="b-count-switch__input b-count-switch__input_sm">
-											<input type="text" maxlength="3" disabled value="1">
-										</div>
-										<div class="b-cart-item-counter__button b-count-switch__button b-cart-item-counter__button_nohide">
-											<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
-										</div>
-									</div>
-								</div>
-								<div class="b-cart-item__price"><span>545&#160;&#8381;</span></div>
-								<div class="b-cart-item-remove"><button class="b-cart-item-remove__button"></button></div>
-							</div>
-						</div>
+
 					</div>
 
 					<div class="b-finish-order">
-						<div class="b-finish-order__sum"><span>Итого: <strong>545&#160;&#8381;</strong></span></div>
+						<div class="b-finish-order__sum"><span>Итого: <strong id="cart-total">0</strong><strong>&#160;&#8381;</strong></span></div>
 						<div class="b-finish-order__button">
-							<button class="b-button b-button-big"><span>Оформить заказ</span></button>
+							<button class="b-button b-button-big b-button_finish b-button_invis" onclick="openOrderForm()"><span>Оформить заказ</span></button>
 						</div>
 
 					</div>
@@ -266,38 +220,9 @@
 
 					<div class="b-product-list">
 						<article class="b-product b-product_sm">
-							<a class="mfp-product" href="#popup-product1">
-								<div class="b-product-pic">
-									<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
-								</div>
-							</a>
-							<header class="b-product__title b-product__title_sm">
-								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
-							</header>
-							
-							<footer class="b-product-price">
-								<div class="b-product-price__text"><span>360&#160;&#8381;</span></div>
-								<div class="b-product__caption b-product__caption_inline"><span>900 гр.</span></div>
-								<div class="b-count-switch b-count-switch_noinline">
-									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
-									</div>
-									<div class="b-count-switch__input b-count-switch__input_sm">
-										<input type="text" maxlength="3" disabled value="0">
-									</div>
-									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
-								</div>
+							<div class="b-product-pic">
+								<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
 							</div>
-							</footer>
-						</article>
-
-						<article class="b-product b-product_sm">
-							<a class="mfp-link" href="#popup-order-form">
-								<div class="b-product-pic">
-									<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
-								</div>
-							</a>
 							<header class="b-product__title b-product__title_sm">
 								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
 							</header>
@@ -307,67 +232,13 @@
 								<div class="b-product__caption b-product__caption_inline"><span>900 гр.</span></div>
 								<div class="b-count-switch b-count-switch_noinline">
 									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
+										<button class="b-button cart-minus b-button_nohover b-button_sm" data-id="1"><span>–</span></button>
 									</div>
 									<div class="b-count-switch__input b-count-switch__input_sm">
-										<input type="text" maxlength="3" disabled value="0">
+										<input id="cnt-1" type="text" maxlength="3" disabled value="0">
 									</div>
 									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
-								</div>
-							</div>
-							</footer>
-						</article>
-
-						<article class="b-product b-product_sm">
-							<a class="mfp-product" href="#popup-product1">
-								<div class="b-product-pic">
-									<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
-								</div>
-							</a>
-							<header class="b-product__title b-product__title_sm">
-								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
-							</header>
-							
-							<footer class="b-product-price">
-								<div class="b-product-price__text"><span>360&#160;&#8381;</span></div>
-								<div class="b-product__caption b-product__caption_inline"><span>900 гр.</span></div>
-								<div class="b-count-switch b-count-switch_noinline">
-									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
-									</div>
-									<div class="b-count-switch__input b-count-switch__input_sm">
-										<input type="text" maxlength="3" disabled value="0">
-									</div>
-									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
-								</div>
-							</div>
-							</footer>
-						</article>
-
-						<article class="b-product b-product_sm">
-							<a class="mfp-product" href="#popup-product1">
-								<div class="b-product-pic">
-									<img src="assets/img/ph.jpg" alt="" class="b-product-pic__image">
-								</div>
-							</a>
-							<header class="b-product__title b-product__title_sm">
-								<h3>Пирог с&nbsp;курицей, сыром и&nbsp;зеленью</h3>
-							</header>
-							
-							<footer class="b-product-price">
-								<div class="b-product-price__text"><span>360&#160;&#8381;</span></div>
-								<div class="b-product__caption b-product__caption_inline"><span>900 гр.</span></div>
-								<div class="b-count-switch b-count-switch_noinline">
-									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>–</span></button>
-									</div>
-									<div class="b-count-switch__input b-count-switch__input_sm">
-										<input type="text" maxlength="3" disabled value="0">
-									</div>
-									<div class="b-count-switch__button">
-										<button class="b-button b-button_nohover b-button_sm"><span>+</span></button>
+										<button class="b-button cart-add b-button_nohover b-button_sm" data-id="1" data-title="Пирог с&nbsp;курицей, сыром и&nbsp;зеленью" data-price="545" data-weight="300" data-sprice="360" data-weight="300" data-image="assets/img/piece.jpg"><span>+</span></button>
 								</div>
 							</div>
 							</footer>
@@ -405,11 +276,11 @@
 		<footer class="b-footer b-footer_sticky">
 			<div class="wrap">
 				<div class="b-footer-info">
-					<div class="b-order-info__title"><p>К оплате: <strong>769&#160;&#8381;</strong></p></div>
+					<div class="b-order-info__title"><p>Итого: <strong id="footer-total">0</strong><strong>&#160;&#8381;</strong></p></div>
 					<div class="b-order-info__caption"><p>Осталось уточнить адрес доставки и метод оплаты</p></div>
 				</div>
 				<div class="b-footer-button">
-					<button class="b-button"><span>Далее&nbsp;»</span></button>
+					<button class="b-button b-button_footer b-button_invis" onclick="openOrderForm()"><span>Далее&nbsp;»</span></button>
 				</div>
 			</div>
 		</footer>

@@ -237,6 +237,7 @@ a:hover{
 .b-header-cart-button__counter{
 	position: absolute;
     display: inline-block;
+    visibility:hidden;
 	background:$l-red-clr;
 	border-radius:100%;
 	width:$base-d*4em;
@@ -251,6 +252,9 @@ a:hover{
 		margin-left: -$base-d*0.5em;
 	}
 	
+}
+.b-header-cart-button__counter_vis{
+	visibility:visible;
 }
 .b-header-cart-button__counter p{
 	color:white;
@@ -753,8 +757,14 @@ a:hover{
 	vertical-align: top;
 }
 .b-count-switch{
-	display:inline-block;
 	vertical-align: top;
+	display:none;
+}
+.b-button_invis{
+	display:none;
+}
+.b-count-switch_vis{
+	display:inline-block;
 }
 .b-count-switch_noinline{
 	display:block;
@@ -855,6 +865,14 @@ a:hover{
 .b-cart__title span{
 	@include adjust-font-size-to(24px);
 	font-weight:600;
+}
+.b-cart__empty{
+	padding-left:$base-d*2em;
+	padding-right:$base-d*2em;
+	display:none;
+}
+.b-cart__empty_vis{
+	display:block;
 }
 
 .b-cart-item{
@@ -1023,7 +1041,7 @@ a:hover{
     	width:100%;
     }
 }
-.p-product__image img{
+.p-product__image_pic{
 	width:100%;
 	height:auto;
 	margin-bottom: -7px;
@@ -1417,6 +1435,20 @@ a:hover{
 .form-group_active{
 	display:block;
 }
+.form-group__invalid{
+	display:none;
+	position:absolute;
+	padding:$base-d*0.75em $base-d*1.5em;
+	border-radius:$base-d*1em;
+	background:$l-red-clr;
+	color:white;
+	cursor:pointer;
+	@media (max-width: 500px) {
+		margin-top: -$base-d*1.5em;
+		padding:$base-d*0.5em $base-d*1em;
+    }
+	    
+}
 .form-group__label{
 	display:inline-block;
 	width:30%;
@@ -1440,7 +1472,6 @@ a:hover{
     }
 }
 .form-group__input input, .form-group__textarea{
-	display: block;
 	width:$base-d*10em;
 	border: 1px solid #aaa;
 	padding:$base-d*0.75em $base-d*1.5em;
@@ -1462,6 +1493,7 @@ a:hover{
 	resize:none;
 }
 .form-alert{
+	display:none;
 	background:$back-clr;
 	padding:$base-d*1.5em $base-d*2em;
 	border-radius:$base-d*1em; 
@@ -1510,14 +1542,18 @@ a:hover{
 	@include adjust-font-size-to(24px);
 	font-weight:700;
 }
-.form-success__btn{
-	margin-top:$base-d*2em;
+.form-success__caption{
+	@include rhythm(0, 0, 0, 2);
 }
 .form-loader{
+	visibility:hidden;
 	display:inline-block;
 	padding-left:$base-d*2em;
 	margin-bottom: 2px;
 	vertical-align:middle;
+}
+.form-loader_vis{
+	visibility:visible;
 }
 .spinner {
   height: 34px;

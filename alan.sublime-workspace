@@ -71,7 +71,7 @@
 			"file": "sass/_main.scss",
 			"settings":
 			{
-				"buffer_size": 29683,
+				"buffer_size": 29666,
 				"line_ending": "Unix"
 			}
 		},
@@ -391,6 +391,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"b-cart-item-re",
 			"b-count-switch__button",
 			"b-cart-item-remove__button",
 			"b-cart-item__image",
@@ -550,15 +551,15 @@
 					"file": "sass/_main.scss",
 					"settings":
 					{
-						"buffer_size": 29683,
+						"buffer_size": 29666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9636,
-								9636
+								26785,
+								26785
 							]
 						],
 						"settings":
@@ -568,7 +569,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9517.0,
+						"translation.y": 28041.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
