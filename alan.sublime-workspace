@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"upa",
+				"updateCart"
+			],
+			[
 				"fad",
 				"fadeOut"
 			],
@@ -52,10 +56,26 @@
 	"buffers":
 	[
 		{
+			"file": "sass/_main.scss",
+			"settings":
+			{
+				"buffer_size": 30864,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "404.html",
+			"settings":
+			{
+				"buffer_size": 7445,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "cart.html",
 			"settings":
 			{
-				"buffer_size": 18990,
+				"buffer_size": 14256,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,79 +83,7 @@
 			"file": "assets/js/main.js",
 			"settings":
 			{
-				"buffer_size": 25385,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/_main.scss",
-			"settings":
-			{
-				"buffer_size": 29666,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/_var.scss",
-			"settings":
-			{
-				"buffer_size": 258,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/lib/_unslider.scss",
-			"settings":
-			{
-				"buffer_size": 852,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_layout.scss",
-			"settings":
-			{
-				"buffer_size": 371,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/screen.scss",
-			"settings":
-			{
-				"buffer_size": 276,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/lib/_mfp.scss",
-			"settings":
-			{
-				"buffer_size": 9089,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "p-product.html",
-			"settings":
-			{
-				"buffer_size": 1777,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sass/_anim.scss",
-			"settings":
-			{
-				"buffer_size": 1242,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 2943,
+				"buffer_size": 39365,
 				"line_ending": "Unix"
 			}
 		}
@@ -260,25 +208,31 @@
 	},
 	"file_history":
 	[
+		"/C/Users/writt/Desktop/alana/assets/js/main.min.js",
+		"/C/Users/writt/Desktop/alana/assets/js/main.js",
+		"/C/Users/writt/Desktop/alana/404.html",
+		"/C/Users/writt/Desktop/alana/prod/index.html",
+		"/C/Users/writt/Desktop/alana/prod/cart.html",
+		"/C/Users/writt/Desktop/alana/sass/_main.scss",
 		"/C/Users/writt/Desktop/alana/index.html",
+		"/C/Users/writt/Desktop/alana/sass/_common.scss",
 		"/C/Users/writt/Desktop/alana/cart.html",
+		"/C/Users/writt/Desktop/alana/sass/_var.scss",
+		"/C/Users/writt/Desktop/alana/sass/lib/_unslider.scss",
+		"/C/Users/writt/Desktop/alana/sass/_layout.scss",
+		"/C/Users/writt/Desktop/alana/sass/screen.scss",
+		"/C/Users/writt/Desktop/alana/sass/lib/_mfp.scss",
+		"/C/Users/writt/Desktop/alana/p-product.html",
+		"/C/Users/writt/Desktop/alana/sass/_anim.scss",
 		"/C/Users/writt/Desktop/alana/Gruntfile.js",
 		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/writt/Desktop/alana/sass/_common.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/hamburgers/hamburgers.scss",
 		"/C/Users/writt/Desktop/alana/assets/css/screen.css",
 		"/C/Users/writt/Desktop/alana/sass/lib/_hamburger.scss",
-		"/C/Users/writt/Desktop/alana/assets/js/main.js",
-		"/C/Users/writt/Desktop/alana/sass/_main.scss",
-		"/C/Users/writt/Desktop/alana/sass/_anim.scss",
 		"/C/Users/writt/Desktop/alana/sass/_grids.scss",
-		"/C/Users/writt/Desktop/alana/sass/_layout.scss",
-		"/C/Users/writt/Desktop/alana/sass/screen.scss",
 		"/C/Users/writt/Desktop/alana/sass/_typography.scss",
-		"/C/Users/writt/Desktop/alana/sass/_var.scss",
 		"/C/Users/writt/Desktop/alana/package.json",
-		"/C/Users/writt/Desktop/alana/sass/lib/_unslider.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_normalize.scss",
 		"/C/Users/writt/Desktop/alana/sass/lib/_reset.scss",
 		"/C/Users/writt/Desktop/alana/sass/_decoration.scss",
@@ -391,6 +345,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"addToCart",
+			"parseAjax",
+			"response",
+			"settimeout",
+			"+",
+			"+tv.",
+			"гр.",
+			"img",
+			"тест",
+			"p-product__image",
+			"subprice",
+			"subPrice",
+			"К оплате",
+			"clearCart",
+			"button ",
+			"cnt",
+			"alert",
+			"КОРЗИНА",
+			"b-count-switch",
 			"b-cart-item-re",
 			"b-count-switch__button",
 			"b-cart-item-remove__button",
@@ -475,6 +448,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"*",
 			"ph.jpg",
 			"assets/img/",
 			"$dept1-gray",
@@ -490,23 +464,50 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "cart.html",
+					"file": "sass/_main.scss",
 					"settings":
 					{
-						"buffer_size": 18990,
+						"buffer_size": 30864,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6103,
-								6093
+								27989,
+								27989
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 29077.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "404.html",
+					"settings":
+					{
+						"buffer_size": 7445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -515,25 +516,52 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1961.0,
+						"translation.y": 1983.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "assets/js/main.js",
+					"buffer": 2,
+					"file": "cart.html",
 					"settings":
 					{
-						"buffer_size": 25385,
+						"buffer_size": 14256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								25381,
-								25381
+								7982,
+								7982
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2862.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/js/main.js",
+					"settings":
+					{
+						"buffer_size": 39365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20593,
+								20593
 							]
 						],
 						"settings":
@@ -541,260 +569,16 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4341.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "sass/_main.scss",
-					"settings":
-					{
-						"buffer_size": 29666,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								26785,
-								26785
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 28041.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "sass/_var.scss",
-					"settings":
-					{
-						"buffer_size": 258,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								131,
-								131
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "sass/lib/_unslider.scss",
-					"settings":
-					{
-						"buffer_size": 852,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								471,
-								471
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "sass/_layout.scss",
-					"settings":
-					{
-						"buffer_size": 371,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								366,
-								366
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "sass/screen.scss",
-					"settings":
-					{
-						"buffer_size": 276,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								61,
-								61
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "sass/lib/_mfp.scss",
-					"settings":
-					{
-						"buffer_size": 9089,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2752,
-								2742
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2557.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "p-product.html",
-					"settings":
-					{
-						"buffer_size": 1777,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1374,
-								1374
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "sass/_anim.scss",
-					"settings":
-					{
-						"buffer_size": 1242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								85,
-								85
-							]
-						],
-						"settings":
-						{
-							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Gruntfile.js",
-					"settings":
-					{
-						"buffer_size": 2943,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1218,
-								1218
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -815,11 +599,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.967595593001,
 			1.0
 		],
 		"rows":
@@ -858,6 +649,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 194.0,
+	"side_bar_width": 182.0,
 	"status_bar_visible": true
 }

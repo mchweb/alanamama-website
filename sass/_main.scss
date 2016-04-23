@@ -1477,6 +1477,11 @@ a:hover{
 	padding:$base-d*0.75em $base-d*1.5em;
 	border-radius:$base-d*0.5em;
 }
+.input-noarrow::-webkit-inner-spin-button,
+.input-noarrow::-webkit-inner-outer-button {
+	-webkit-appearance: none; 
+	margin: 0; 
+}
 .form-group__input_sm{
 	width:20%;
 	@media (max-width: 500px) {
@@ -1604,4 +1609,29 @@ a:hover{
   to {
     transform: rotate(359deg);
   }
+}
+
+.b-error {
+	text-align:center;
+}
+.b-error__title{
+	@include rhythm(4, 0, 0, 0);
+}
+.b-error__title span{
+	@include adjust-font-size-to(120px);
+	font-weight:700;
+	color:$accent-clr;
+}
+
+.b-error__caption{
+	max-width:600px;
+	margin:0 auto;
+	@include rhythm(0, 0, 0, 4);
+}
+.b-error__caption span{
+	@include adjust-font-size-to(20px);
+}
+.b-error__caption a{
+	color:$accent-clr;
+	border-bottom:1px solid $accent-clr;
 }

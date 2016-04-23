@@ -1344,7 +1344,7 @@ a {
 /* line 13, ../../sass/_common.scss */
 a.anchor {
   position: absolute;
-  margin-top: -10em;
+  margin-top: -8em;
 }
 
 /* line 18, ../../sass/_common.scss */
@@ -3762,30 +3762,37 @@ body.modal_open {
 }
 
 /* line 1480, ../../sass/_main.scss */
+.input-noarrow::-webkit-inner-spin-button,
+.input-noarrow::-webkit-inner-outer-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 1485, ../../sass/_main.scss */
 .form-group__input_sm {
   width: 20%;
 }
 @media (max-width: 500px) {
-  /* line 1480, ../../sass/_main.scss */
+  /* line 1485, ../../sass/_main.scss */
   .form-group__input_sm {
     display: inline-block;
     width: 30%;
   }
 }
 
-/* line 1487, ../../sass/_main.scss */
+/* line 1492, ../../sass/_main.scss */
 .form-group__input_full input, .form-group__label_full {
   width: 100%;
 }
 
-/* line 1490, ../../sass/_main.scss */
+/* line 1495, ../../sass/_main.scss */
 .form-group__textarea {
   margin-top: 0.375em;
   width: 100%;
   resize: none;
 }
 
-/* line 1495, ../../sass/_main.scss */
+/* line 1500, ../../sass/_main.scss */
 .form-alert {
   display: none;
   background: #f2e0b3;
@@ -3793,19 +3800,19 @@ body.modal_open {
   border-radius: 0.375em;
 }
 
-/* line 1501, ../../sass/_main.scss */
+/* line 1506, ../../sass/_main.scss */
 .form-alert a {
   border-bottom: 1px solid #801817;
   color: #801817;
 }
 
-/* line 1506, ../../sass/_main.scss */
+/* line 1511, ../../sass/_main.scss */
 .checkmark {
   display: inline-block;
   padding: 0 0.1875em;
   margin-right: 0.375em;
 }
-/* line 1511, ../../sass/_main.scss */
+/* line 1516, ../../sass/_main.scss */
 .checkmark:after {
   /*Add another block-level blank space*/
   content: '';
@@ -3820,13 +3827,13 @@ body.modal_open {
   transform: rotate(45deg);
 }
 
-/* line 1528, ../../sass/_main.scss */
+/* line 1533, ../../sass/_main.scss */
 .form-success {
   text-align: center;
   display: none;
 }
 
-/* line 1532, ../../sass/_main.scss */
+/* line 1537, ../../sass/_main.scss */
 .checkmark_big::after {
   width: 60px;
   height: 96px;
@@ -3834,7 +3841,7 @@ body.modal_open {
   border-color: #801817;
 }
 
-/* line 1538, ../../sass/_main.scss */
+/* line 1543, ../../sass/_main.scss */
 .form-success__title {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -3842,14 +3849,14 @@ body.modal_open {
   margin-bottom: 0em;
 }
 
-/* line 1541, ../../sass/_main.scss */
+/* line 1546, ../../sass/_main.scss */
 .form-success__title p {
   font-size: 1.5em;
   line-height: 1.25em;
   font-weight: 700;
 }
 
-/* line 1545, ../../sass/_main.scss */
+/* line 1550, ../../sass/_main.scss */
 .form-success__caption {
   margin-top: 0em;
   padding-top: 0em;
@@ -3857,7 +3864,7 @@ body.modal_open {
   margin-bottom: 0.75em;
 }
 
-/* line 1548, ../../sass/_main.scss */
+/* line 1553, ../../sass/_main.scss */
 .form-loader {
   visibility: hidden;
   display: inline-block;
@@ -3866,12 +3873,12 @@ body.modal_open {
   vertical-align: middle;
 }
 
-/* line 1555, ../../sass/_main.scss */
+/* line 1560, ../../sass/_main.scss */
 .form-loader_vis {
   visibility: visible;
 }
 
-/* line 1558, ../../sass/_main.scss */
+/* line 1563, ../../sass/_main.scss */
 .spinner {
   height: 34px;
   width: 34px;
@@ -3919,6 +3926,49 @@ body.modal_open {
     transform: rotate(359deg);
   }
 }
+/* line 1614, ../../sass/_main.scss */
+.b-error {
+  text-align: center;
+}
+
+/* line 1617, ../../sass/_main.scss */
+.b-error__title {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 1620, ../../sass/_main.scss */
+.b-error__title span {
+  font-size: 7.5em;
+  line-height: 1.05em;
+  font-weight: 700;
+  color: #801817;
+}
+
+/* line 1626, ../../sass/_main.scss */
+.b-error__caption {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1631, ../../sass/_main.scss */
+.b-error__caption span {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+
+/* line 1634, ../../sass/_main.scss */
+.b-error__caption a {
+  color: #801817;
+  border-bottom: 1px solid #801817;
+}
+
 /* line 5, ../../sass/_decoration.scss */
 .clr-white {
   color: white !important;

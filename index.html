@@ -19,7 +19,7 @@
 		<link rel="stylesheet" media="screen" href="assets/css/screen.css">
 		<!-- /build -->
 	</head>
-	<body>
+	<body class="mfp-ajax-cur">
 
 
 		<!--[if lt IE 10]>
@@ -38,7 +38,7 @@
 						</button>
 					</div>
 					<a href="#">
-						<img width=182 height=144 class="b-header__logo" src="assets/img/header-logo.png" alt="">
+						<img width=182 height=144 class="b-header__logo" src="assets/img/header-logo.png" alt="АланаМама — Доставка пирогов в Томске">
 					</a>
 					
 					<div class="b-header__caption">
@@ -54,7 +54,7 @@
 						<div class="b-header-cart__sum"><span id="header-total">0</span><span>&#160;&#8381;</span></div>
 
 						<div class="b-header-cart-button">
-							<img width=72 height=72 class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="">
+							<img width=72 height=72 class="b-header-cart-button__icon" src="assets/img/header-cart.png" alt="Корзина">
 							<div class="b-header-cart-button__caption"><span>Корзина</span></div>
 							<div class="b-header-cart-button__counter"><p>0</p></div>
 						</div>
@@ -69,14 +69,14 @@
 							</div>
 							<div class="b-cart-total">
 								<div class="b-cart-total__sum"><p>Сумма заказа: <span id="cart-total">0</span><span>&#160;&#8381;</span></p></div>
-								<div class="b-cart-total__button"><button class="b-button b-button_finish"><span>Перейти к оформлению</span></button></div>
+								<div class="b-cart-total__button"><a class="b-button b-button_finish"><span>Перейти к оформлению</span></a></div>
 							</div>
 						</div>
 						<!-- END of b-cart -->
 
 					</div>
 					<div class="b-header__logo_inline">
-						<a href="#"><img width=310 height=84 src="assets/img/header-logo-inline.png" alt=""></a>
+						<a href="#"><img width=310 height=84 src="assets/img/header-logo-inline.png" alt="АланаМама — Доставка пирогов в Томске"></a>
 					</div>
 				</div>
 			</header>
@@ -127,7 +127,7 @@
 			<div class="p-menu-item b-promo p-menu-item_current">
 				<div class="p-menu-item__title"><span>Подробные условия акций уточняйте по телефону <a href="tel:+73822209209">209-209</a></span></div>
 				<div class="b-promo-item">
-					<img width=360 height=180 class="b-promo-item__image" src="assets/img/promo.jpg" alt="">
+					<img width=360 height=180 class="b-promo-item__image" src="assets/img/promo.jpg" alt="Акция: счастливые часы">
 					<p class="b-promo-item__title">Счастливые часы!</p>
 					<p class="b-promo-item__desc">Все пироги по супер-ценам</p>
 				</div><!--
@@ -259,8 +259,8 @@
 			<div class="b-slider">
 				<div class="slider">
 					<ul>
-						<li><div class="slider__image"><img width=1920 height=552 src="assets/img/promo-2.png" /></div></li>
-						<li><div class="slider__image"><img width=1920 height=552 src="assets/img/promo-1.png" /></div></li>
+						<li><div class="slider__image"><img width=1920 height=552 src="assets/img/promo-2.png" alt="Акция: при заказе пирога с сайта, соус в подарок" /></div></li>
+						<li><div class="slider__image"><img width=1920 height=552 src="assets/img/promo-1.png" alt="Акция: заказ пирогов по низкой цене с 10 до 18" /></div></li>
 						<!--<li><div class="slider-img"><img width=1920 height=552 src="assets/img/placeholder.png" /></div></li>-->
 					</ul>
 				</div>
@@ -269,6 +269,7 @@
 
 			<!-- BEGIN of b-cat -->
 			<div class="wrap">
+			<a id="pie" class="anchor"></a>
 			<section>
 				<div class="b-cat">
 					<div class="b-cat__heading">
@@ -279,13 +280,10 @@
 				<div class="b-product-list">
 					
 					<article itemscope itemtype="http://schema.org/Product" class="b-product">
-						<a class="mfp-product" href="#popup-product1">
+						<a class="mfp-product" href="http://alana.provocationstudio.ru/catalog/?product_id=21">
 							<div class="b-product-pic">
 								<div class="b-product-pic__promo b-product-pic__promo_green"><span>Хит!</span></div>
-								<picture class="b-product-pic__image">
-								    <source srcset="assets/img/ph.jpg, assets/img/ph-2x.jpg 2x"  class="b-product-pic__image">
-								    <img srcset="assets/img/ph.jpg, assets/img/ph-2x.jpg 2x" alt="" class="b-product-pic__image">
-								</picture>
+								    <img itemprop="name" src="assets/img/ph.jpg" srcset="assets/img/ph.jpg, assets/img/ph-2x.jpg 2x" width="360" height="225" alt="Пирог с курицей, сыром и зеленью" class="b-product-pic__image">
 							</div>
 						</a>
 						<header class="b-product__title">
@@ -298,7 +296,7 @@
 							<meta itemprop="priceCurrency" content="RUB">
 							<div class="b-product-price__text b-product-price__text_promo"><span>360&#160;&#8381;</span></div>
 							<div class="b-product-price__button">
-								<button class="b-button cart-add" id="add-1" data-id="1" data-title="Пирог с&nbsp;курицей, сыром и&nbsp;зеленью" data-price="545" data-weight="300" data-sprice="360" data-weight="300" data-image="assets/img/piece.jpg"><span>В корзину</span></button>
+								<button class="b-button cart-add" id="add-1" data-id="1" data-title="Пирог с&nbsp;курицей, сыром и&nbsp;зеленью" data-price="545" data-sprice="360" data-weight="300" data-image="assets/img/piece.jpg"><span>В корзину</span></button>
 								
 								<div class="b-count-switch" id="sw-1">
 									<div class="b-count-switch__button">
@@ -319,10 +317,7 @@
 					<!-- BEGIN of p-product -->
 					<article id="popup-product1" class="p-product mfp-hide zoom-anim-dialog">
 						<div class="p-product__image">
-							<picture class="p-product__image_pic">
-								<source srcset="assets/img/piece.jpg, assets/img/piece-2x.jpg 2x" class="p-product__image_pic">
-								<img srcset="assets/img/piece.jpg, assets/img/piece-2x.jpg 2x" alt="" class="p-product__image_pic">
-							</picture>
+								<img src="assets/img/piece.jpg" srcset="assets/img/piece.jpg, assets/img/piece-2x.jpg 2x" width="355" height="355" alt="Пирог с курицей" class="p-product__image_pic">
 							<div class="b-product-pic__promo b-product-pic__promo_popup b-product-pic__promo_green"><span>Хит!</span></div>
 						</div>
 						<div class="p-product-info">
@@ -335,7 +330,7 @@
 							<footer class="b-product-price b-product-price_popup">
 								<div class="b-product-price__text b-product-price__text_promo"><span>360&#160;&#8381;</span></div>
 								<div class="b-product-price__button b-product-price__button_right">
-									<button class="b-button cart-add" id="p-add-1" data-id="1" data-title="Пирог с&nbsp;курицей, сыром и&nbsp;зеленью" data-price="545" data-weight="300" data-sprice="360" data-weight="300" data-image="assets/img/piece.jpg"><span>В корзину</span></button>
+									<button class="b-button cart-add" id="p-add-1" data-id="1" data-title="Пирог с&nbsp;курицей, сыром и&nbsp;зеленью" data-price="545" data-weight="300" data-sprice="360" data-image="assets/img/piece.jpg"><span>В корзину</span></button>
 									<div class="b-count-switch" id="p-sw-1">
 										<div class="b-count-switch__button">
 											<button class="b-button b-button_nohover cart-minus" data-id="1"><span>–</span></button>
@@ -397,7 +392,7 @@
 				<div class="b-footer-contacts">
 					<a href="tel:+73822209209">
 						<div class="b-footer-contacts-phone">
-							<img width=84 height=84 class="b-footer-contacts-phone__icon" src="assets/img/header-phone.png" alt=""></img>
+							<img width=84 height=84 class="b-footer-contacts-phone__icon" src="assets/img/header-phone.png" alt="АланаМама — Доставка пирогов в Томске. 209-209">
 							<div class="b-footer-contacts-phone__caption"><span>209-209</span></div>
 						</div>
 					</a>
@@ -410,7 +405,7 @@
 
 		<!-- BEGIN of b-call -->
 		<div class="b-call">
-			<a href="tel:+73822209209"><img width=144 height=144 class="b-call__icon" src="assets/img/footer-phone.png"></a>
+			<a href="tel:+73822209209"><img width=144 height=144 class="b-call__icon" src="assets/img/footer-phone.png" alt="АланаМама — Доставка пирогов в Томске. 209-209"></a>
 		</div>
 		<!-- END of b-call -->
 		
