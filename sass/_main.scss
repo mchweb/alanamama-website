@@ -649,6 +649,14 @@ a:hover{
 		display:none;
 	}
 }
+.b-product-pic{
+	padding-bottom: 62.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom:$base-d*2em;
+    border-radius:$base-d*2em;
+}
 .b-product-pic__promo{
 	position:absolute;
 	color:white;
